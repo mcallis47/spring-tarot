@@ -3,6 +3,7 @@ package zodiac;
 import jakarta.persistence.*;
 
 @Entity
+@DiscriminatorValue("Configuration")
 public class Configuration extends Zodiac {
 	@ManyToOne
 	@JoinColumn(name = "sign_id", nullable = false)
