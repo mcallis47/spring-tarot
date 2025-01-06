@@ -1,16 +1,10 @@
 package cards;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 @Entity
 public class Arrangement {
 	@Id
@@ -21,8 +15,9 @@ public class Arrangement {
 	private Long deck_id;
 	
     // List to hold the cards in the deck
-	@ManyToMany(mappedBy = "arrangement", cascade = CascadeType.ALL)
-    private List<Card> cards = new ArrayList<>();
+	@OneToMany
+	@JoinColumn(name = "deck_id", referencedColumnName = "deckId", insertable = false, updatable = false)
+    private List<Card> cards;
 	
     // Constructor
     public Arrangement() {
@@ -34,4 +29,14 @@ public class Arrangement {
 	public String getName() {
 		return name;
 	}
+
+
+
+	/**
+	 * @return the deck_id
+	 */
+	public Long getDeck_id() {
+		return deck_id;
+	}
+
 }

@@ -3,10 +3,7 @@
  */
 package cards;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 
 /**
  * 
@@ -21,9 +18,7 @@ public class Card {
     private String description; // A brief description of the card
     private String suit; // The suit of the card (e.g., Major, Cups, Swords, etc.)
     private int val; // Value of the card in its suit (if applicable)
-    @ManyToMany
-    @JoinColumn(name = "deck_id")
-    private Long deck; // Id of associated deck
+    private Long deckId; // Id of associated deck
 
 
     // Getters and Setters
@@ -56,6 +51,15 @@ public class Card {
     public int getVal() {
         return val;
     }
+
+
+	/**
+	 * @return the deckId
+	 */
+	public Long getDeckId() {
+		return deckId;
+	}
+
 
 
 
