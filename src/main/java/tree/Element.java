@@ -1,6 +1,5 @@
 package tree;
 
-import java.util.List;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
@@ -13,7 +12,6 @@ public abstract class Element {
 	private String utterance; // Enunciation of the related character
 	private String letterEnglish; // English translation of the related character
 	private int number; // Number associated with element
-	private List<Element> connected; // Paths connected to a sefira, or sefirot connected to a path
 	/**
 	 * @return the letter
 	 */
@@ -38,12 +36,7 @@ public abstract class Element {
 	public int getNumber() {
 		return number;
 	}
-	/**
-	 * @return the connected
-	 */
-	public List<Element> getConnected() {
-		return connected;
-	}
+
 
 
 	
