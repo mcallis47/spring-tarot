@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Id;
 
 import jakarta.persistence.*;
 import tree.Element;
+import zodiac.Zodiac;
 @Entity
 public class Arrangement {
 	@Id
@@ -23,14 +24,25 @@ public class Arrangement {
     private List<Card> cards;
 	
 	// Maps card values to qabbalistic elements
+	// TODO: Create Zodiac classes and update
 	@OneToMany
     @JoinTable(
-        name = "arrangement_elements",
+        name = "card_to_qabala",
         joinColumns = @JoinColumn(name = "arrangement_id"),
         inverseJoinColumns = @JoinColumn(name = "element_id")
     )
     @MapKeyColumn(name = "key") // The column to store the integer key
-    private Map<Integer, Element> elements = new HashMap<>();
+    private Map<Integer, Element> treeAttributions = new HashMap<>();
+	
+	// Maps qabbalistic elements to zodiac
+	@OneToMany
+	@JoinTable(
+	    name = "qabala_to_zodiac",
+	    joinColumns = @JoinColumn(name = "arrangement_id"),
+	    inverseJoinColumns = @JoinColumn(name = "element_id")
+	)
+	@MapKeyColumn(name = "key") // The column to store the integer key
+	private Map<Integer, Zodiac> zodiacAttributions = new HashMap<>();
 	
     // Constructor
     public Arrangement() {
