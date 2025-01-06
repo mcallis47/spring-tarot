@@ -9,4 +9,17 @@ public abstract class Zodiac {
     private Long id; // Unique identifier for the Zodiacal element
 	private String name; // English name of element
 	private String symbol; // URI of symbol
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @return the symbol
+	 */
+	public String getSymbol() {
+		return symbol;
+	}
+
 }

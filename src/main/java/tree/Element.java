@@ -1,10 +1,15 @@
 package tree;
 
 
+import jakarta.persistence.DiscriminatorColumn;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Element_Type")
 public abstract class Element {
 	@Id
     private Long id; // Unique identifier for the element (0-21 for paths, 22-31 for sefirot)
