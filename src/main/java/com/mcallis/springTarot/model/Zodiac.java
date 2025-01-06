@@ -1,4 +1,4 @@
-package zodiac;
+package com.mcallis.springTarot.model;
 
 import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.Entity;

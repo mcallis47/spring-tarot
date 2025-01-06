@@ -1,4 +1,4 @@
-package cards;
+package com.mcallis.springTarot.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

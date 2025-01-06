@@ -1,4 +1,4 @@
-package tree;
+package com.mcallis.springTarot.model;
 
 
 import jakarta.persistence.DiscriminatorColumn;

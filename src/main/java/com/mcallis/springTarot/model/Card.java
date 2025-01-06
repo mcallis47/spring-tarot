@@ -1,7 +1,7 @@
 /**
  * 
  */
-package cards;
+package com.mcallis.springTarot.model;
 
 import jakarta.persistence.*;
 

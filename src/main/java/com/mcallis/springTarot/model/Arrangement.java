@@ -1,4 +1,4 @@
-package relationships;
+package com.mcallis.springTarot.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -6,10 +6,7 @@ import java.util.Map;
 
 import org.springframework.data.annotation.Id;
 
-import cards.Card;
 import jakarta.persistence.*;
-import tree.Element;
-import zodiac.Zodiac;
 @Entity
 public class Arrangement {
 	@Id
