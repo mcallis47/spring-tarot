@@ -13,15 +13,16 @@ import jakarta.persistence.InheritanceType;
 public abstract class Element {
 	@Id
     private Long id; // Unique identifier for the element (0-21 for paths, 22-31 for sefirot)
-	private String letter; // Hebrew character related to the element
+	
+	private String name; // Hebrew word or character related to the element
 	private String utterance; // Enunciation of the related character
 	private String letterEnglish; // English translation of the related character
 	private int number; // Number associated with element
 	/**
 	 * @return the letter
 	 */
-	public String getLetter() {
-		return letter;
+	public String getName() {
+		return name;
 	}
 	/**
 	 * @return the utterance
@@ -42,6 +43,9 @@ public abstract class Element {
 		return number;
 	}
 
+	public Long getId() {
+		return id;
+	}
 
 
 	

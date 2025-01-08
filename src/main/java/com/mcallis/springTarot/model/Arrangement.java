@@ -1,5 +1,4 @@
 package com.mcallis.springTarot.model;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +12,8 @@ public class Arrangement {
     private Long id;
 	
 	private String name;
+	
+	private String description;
 	
 	private Long deck_id;
 	
@@ -30,7 +31,7 @@ public class Arrangement {
         inverseJoinColumns = @JoinColumn(name = "element_id")
     )
     @MapKeyColumn(name = "key") // The column to store the integer key
-    private Map<Integer, Element> treeAttributions = new HashMap<>();
+    private Map<Long, Element> treeAttributions = new HashMap<>();
 	
 	// Maps qabbalistic elements to zodiac
 	@OneToMany
@@ -40,13 +41,7 @@ public class Arrangement {
 	    inverseJoinColumns = @JoinColumn(name = "element_id")
 	)
 	@MapKeyColumn(name = "key") // The column to store the integer key
-	private Map<Integer, Zodiac> zodiacAttributions = new HashMap<>();
-	
-    // Constructor
-    public Arrangement() {
-        this.cards = new ArrayList<>();
-    }
-
+	private Map<Long, Zodiac> zodiacAttributions = new HashMap<>();
     
 
 	public String getName() {
@@ -60,6 +55,23 @@ public class Arrangement {
 	 */
 	public Long getDeck_id() {
 		return deck_id;
+	}
+	
+	public Element getQabbalisticAttributionByCard(Long cardId) {
+		return treeAttributions.get(cardId);
+	}
+	
+	public Zodiac getZodiacalAttributionByElement(Long elementId) {
+		return zodiacAttributions.get(elementId);
+	}
+
+
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
 	}
 
 }
