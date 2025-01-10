@@ -31,7 +31,7 @@ public class Arrangement {
         inverseJoinColumns = @JoinColumn(name = "element_id")
     )
     @MapKeyColumn(name = "key") // The column to store the integer key
-    private Map<Long, Element> treeAttributions = new HashMap<>();
+    private Map<Long, Path> treeAttributions = new HashMap<>();
 	
 	// Maps qabbalistic elements to zodiac
 	@OneToMany
@@ -57,7 +57,7 @@ public class Arrangement {
 		return deck_id;
 	}
 	
-	public Element getQabbalisticAttributionByCard(Long cardId) {
+	public Path getQabbalisticAttributionByCard(Long cardId) {
 		return treeAttributions.get(cardId);
 	}
 	

@@ -8,7 +8,7 @@ package com.mcallis.springTarot.model;
  */
 public class CardExtended extends Card {
 	private Zodiac zodiacalAttribution;
-	private Element qabbalisticAttribution;
+	private Path qabbalisticAttribution;
 	
 	public CardExtended(Card baseCard, Arrangement arrangement) {
 		this.id = baseCard.id;
@@ -31,7 +31,7 @@ public class CardExtended extends Card {
 	/**
 	 * @return the qabbalisticAttribution
 	 */
-	public Element getQabbalisticAttribution() {
+	public Path getQabbalisticAttribution() {
 		return qabbalisticAttribution;
 	}
 }

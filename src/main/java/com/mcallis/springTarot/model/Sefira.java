@@ -13,8 +13,8 @@ import jakarta.persistence.ManyToMany;
 @Entity
 @DiscriminatorValue("Sefira")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Sefira extends Element {
+public class Sefira extends Path {
 	// List to hold the cards in the deck
 	@ManyToMany(mappedBy = "sefirot", cascade = CascadeType.ALL)
-	private List<Path> paths; // Paths which connect to this node
+	private List<Letter> paths; // Paths which connect to this node
 }
