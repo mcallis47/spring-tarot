@@ -23,10 +23,9 @@ public class Arrangement {
     private List<Card> cards;
 	
 	// Maps card values to qabbalistic paths
-	// TODO: Create Zodiac classes and update
-	@OneToMany
+	@ManyToMany
     @JoinTable(
-        name = "card_to_qabala",
+        name = "card_to_path",
         joinColumns = @JoinColumn(name = "arrangement_id"),
         inverseJoinColumns = @JoinColumn(name = "path_id")
     )
@@ -34,9 +33,9 @@ public class Arrangement {
     private Map<Long, Path> correspondences = new HashMap<>();
 	
 	// Maps qabbalistic paths to attribution
-	@OneToMany
+	@ManyToMany
 	@JoinTable(
-	    name = "qabala_to_attribution",
+	    name = "card_to_attribution",
 	    joinColumns = @JoinColumn(name = "arrangement_id"),
 	    inverseJoinColumns = @JoinColumn(name = "attribution_id")
 	)
