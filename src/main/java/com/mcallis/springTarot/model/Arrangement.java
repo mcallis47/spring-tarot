@@ -22,26 +22,26 @@ public class Arrangement {
 	@JoinColumn(name = "deck_id", referencedColumnName = "deckId", insertable = false, updatable = false)
     private List<Card> cards;
 	
-	// Maps card values to qabbalistic elements
+	// Maps card values to qabbalistic paths
 	// TODO: Create Zodiac classes and update
 	@OneToMany
     @JoinTable(
         name = "card_to_qabala",
         joinColumns = @JoinColumn(name = "arrangement_id"),
-        inverseJoinColumns = @JoinColumn(name = "element_id")
+        inverseJoinColumns = @JoinColumn(name = "path_id")
     )
     @MapKeyColumn(name = "key") // The column to store the integer key
-    private Map<Long, Path> treeAttributions = new HashMap<>();
+    private Map<Long, Path> correspondences = new HashMap<>();
 	
-	// Maps qabbalistic elements to zodiac
+	// Maps qabbalistic paths to attribution
 	@OneToMany
 	@JoinTable(
-	    name = "qabala_to_zodiac",
+	    name = "qabala_to_attribution",
 	    joinColumns = @JoinColumn(name = "arrangement_id"),
-	    inverseJoinColumns = @JoinColumn(name = "element_id")
+	    inverseJoinColumns = @JoinColumn(name = "attribution_id")
 	)
 	@MapKeyColumn(name = "key") // The column to store the integer key
-	private Map<Long, Zodiac> zodiacAttributions = new HashMap<>();
+	private Map<Long, Attribution> attributions = new HashMap<>();
     
 
 	public String getName() {
@@ -57,12 +57,12 @@ public class Arrangement {
 		return deck_id;
 	}
 	
-	public Path getQabbalisticAttributionByCard(Long cardId) {
-		return treeAttributions.get(cardId);
+	public Path getQabbalisticCorrespondenceByCard(Long cardId) {
+		return correspondences.get(cardId);
 	}
 	
-	public Zodiac getZodiacalAttributionByElement(Long elementId) {
-		return zodiacAttributions.get(elementId);
+	public Attribution getZodiacalCorrespondenceByElement(Long elementId) {
+		return attributions.get(elementId);
 	}
 
 

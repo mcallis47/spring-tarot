@@ -12,7 +12,7 @@ import jakarta.persistence.InheritanceType;
 @DiscriminatorColumn(name = "Path_Type")
 public abstract class Path {
 	@Id
-    private Long id; // Unique identifier for the element (1-10 for sefirot, 11-32 for letters)
+    private Long id; // Unique identifier for the path (1-10 for sefirot, 11-32 for letters)
 	
 	private String name; // Hebrew word or character related to the path
 	private String utterance; // Enunciation of the related character

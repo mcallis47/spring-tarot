@@ -3,9 +3,9 @@ package com.mcallis.springTarot.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.mcallis.springTarot.model.Zodiac;
+import com.mcallis.springTarot.model.Attribution;
 
 @Repository
-public interface ZodiacRepository extends JpaRepository<Zodiac, Long> {
+public interface AttributionRepository extends JpaRepository<Attribution, Long> {
 	
 }

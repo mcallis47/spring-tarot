@@ -7,8 +7,8 @@ import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("Sign")
+@DiscriminatorValue("Element")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Sign extends Attribution {
+public class Element extends Attribution {
 
 }

@@ -6,14 +6,14 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 
 @Entity
-@DiscriminatorValue("Configuration")
+@DiscriminatorValue("ElementPair")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Configuration extends Attribution {
+public class ElementPair extends Attribution {
 	@ManyToOne
-	@JoinColumn(name = "sign_id", nullable = false)
-	private Sign sign;
+	@JoinColumn(name = "element_id", nullable = false)
+	private Element majorElement;
 	@ManyToOne
-	@JoinColumn(name = "sphere_id", nullable = false)
-	private Sphere house;
+	@JoinColumn(name = "element_id", nullable = false)
+	private Element minorElement;
 	
 }

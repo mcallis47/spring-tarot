@@ -9,6 +9,6 @@ import jakarta.persistence.Entity;
 @Entity
 @DiscriminatorValue("Sphere")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Sphere extends Zodiac {
+public class Sphere extends Attribution {
 
 }

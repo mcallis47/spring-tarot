@@ -11,12 +11,12 @@ import jakarta.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "Zodiac_Type")
+@DiscriminatorColumn(name = "Attribution_Type")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public abstract class Zodiac {
+public abstract class Attribution {
 	@Id
-    private Long id; // Unique identifier for the Zodiacal element
-	private String name; // English name of element
+    private Long id; // Unique identifier for the attribution
+	private String name; // English name of attribution
 	private String symbol; // URI of symbol
 	/**
 	 * @return the name
