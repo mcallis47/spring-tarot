@@ -16,5 +16,5 @@ import jakarta.persistence.ManyToMany;
 public class Sefira extends Path {
 	// List to hold the cards in the deck
 	@ManyToMany(mappedBy = "sefirot", cascade = CascadeType.ALL)
-	private List<Letter> paths; // Paths which connect to this node
+	private List<Letter> letters; // Paths which connect to this node
 }

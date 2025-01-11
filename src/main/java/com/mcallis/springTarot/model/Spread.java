@@ -1,19 +1,22 @@
 package com.mcallis.springTarot.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import java.util.List;
+
+import jakarta.persistence.*;
 
 @Entity
 public class Spread {
 	@Id
     private Long id; // Unique identifier for spread
 	private String name; // Title of spread
-	private String[] altNames; // Alternative names of the spread
+	//private String[] altNames; // Alternative names of the spread
 	private String source; // Source(s) of information on spread
 	private String description; // description of spread
 	private String descriptionExt; // extended description of spread
 	private int count; // Number of cards in the spread
-	private String[] descriptions; // descriptions of each index of the spread
+	@ElementCollection
+	@CollectionTable(name = "spread_descriptions", joinColumns = @JoinColumn(name = "spread_id"))
+	private List<String> descriptions; // descriptions of each index of the spread
 	private String diagram; // URI of the spread diagram
 	/**
 	 * @return the name
@@ -21,12 +24,7 @@ public class Spread {
 	public String getName() {
 		return name;
 	}
-	/**
-	 * @return the altNames
-	 */
-	public String[] getAltNames() {
-		return altNames;
-	}
+
 	/**
 	 * @return the source
 	 */
@@ -54,7 +52,7 @@ public class Spread {
 	/**
 	 * @return the descriptions
 	 */
-	public String[] getDescriptions() {
+	public List<String> getDescriptions() {
 		return descriptions;
 	}
 	/**

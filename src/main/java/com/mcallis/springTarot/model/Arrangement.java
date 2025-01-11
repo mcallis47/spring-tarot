@@ -15,7 +15,7 @@ public class Arrangement {
 	
 	private String description;
 	
-	private Long deck_id;
+	private Long deckId;
 	
     // List to hold the cards in the deck
 	@OneToMany
@@ -29,7 +29,7 @@ public class Arrangement {
         joinColumns = @JoinColumn(name = "arrangement_id"),
         inverseJoinColumns = @JoinColumn(name = "path_id")
     )
-    @MapKeyColumn(name = "key") // The column to store the integer key
+    @MapKeyColumn(name = "card_id") // The column to store the integer key
     private Map<Long, Path> correspondences = new HashMap<>();
 	
 	// Maps qabbalistic paths to attribution
@@ -39,7 +39,7 @@ public class Arrangement {
 	    joinColumns = @JoinColumn(name = "arrangement_id"),
 	    inverseJoinColumns = @JoinColumn(name = "attribution_id")
 	)
-	@MapKeyColumn(name = "key") // The column to store the integer key
+	@MapKeyColumn(name = "card_id") // The column to store the integer key
 	private Map<Long, Attribution> attributions = new HashMap<>();
     
 
@@ -53,7 +53,7 @@ public class Arrangement {
 	 * @return the deck_id
 	 */
 	public Long getDeck_id() {
-		return deck_id;
+		return deckId;
 	}
 	
 	public Path getQabbalisticCorrespondenceByCard(Long cardId) {
