@@ -29,7 +29,7 @@ CREATE TABLE cards (
 CREATE TABLE paths (
     id INT PRIMARY KEY,
     name NVARCHAR(10) NOT NULL UNIQUE,
-    utterance VARCHAR(20) NOT NULL UNIQUE,
+    utterance NVARCHAR(20) NOT NULL UNIQUE,
     english_name VARCHAR(20) NOT NULL UNIQUE,
     number INT NOT NULL
 );
@@ -42,6 +42,12 @@ CREATE TABLE spreads (
     description_ext TEXT NOT NULL,
     count INT NOT NULL,
     diagram VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE decks (
+    id INT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    description VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE card_to_path (

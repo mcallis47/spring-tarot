@@ -3,6 +3,8 @@
  */
 package com.mcallis.springTarot.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.*;
 
 /**
@@ -19,7 +21,10 @@ public class Card {
 	protected String description_ext; // An extended description of the card and symbolism found in it
     protected String suit; // The suit of the card (e.g., Major, Cups, Swords, etc.)
     protected int val; // Value of the card in its suit (if applicable)
-    protected Long deckId; // Id of associated deck
+    @ManyToOne
+    @JoinColumn(name = "deck_id", nullable = false)
+    @JsonProperty("deck_id")
+    protected Deck deck; // Id of associated deck
 
 
     // Getters and Setters
@@ -57,8 +62,8 @@ public class Card {
 	/**
 	 * @return the deckId
 	 */
-	public Long getDeckId() {
-		return deckId;
+	public Deck getDeck() {
+		return deck;
 	}
 
 

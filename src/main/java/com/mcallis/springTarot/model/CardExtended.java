@@ -18,7 +18,7 @@ public class CardExtended extends Card {
 		this.description_ext = baseCard.description_ext;
 		this.suit = baseCard.suit;
 		this.val = baseCard.val;
-		this.deckId = baseCard.deckId;
+		this.deck = baseCard.deck;
 		this.qabbalisticCorrespondence = arrangement.getQabbalisticCorrespondenceByCard(id);
 		this.zodiacalCorrespondence = arrangement.getZodiacalCorrespondenceByElement(qabbalisticCorrespondence.getId());
 	}

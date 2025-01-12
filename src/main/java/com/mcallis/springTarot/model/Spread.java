@@ -16,6 +16,8 @@ public class Spread {
 	private int count; // Number of cards in the spread
 	@ElementCollection
 	@CollectionTable(name = "spread_descriptions", joinColumns = @JoinColumn(name = "spread_id"))
+	@Column(name = "description") // Column for the actual string values
+    @OrderColumn(name = "description_order") // Column for the order index
 	private List<String> descriptions; // descriptions of each index of the spread
 	private String diagram; // URI of the spread diagram
 	/**

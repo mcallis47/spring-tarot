@@ -1,6 +1,5 @@
 package com.mcallis.springTarot.model;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.data.annotation.Id;
@@ -15,12 +14,9 @@ public class Arrangement {
 	
 	private String description;
 	
-	private Long deckId;
-	
-    // List to hold the cards in the deck
-	@OneToMany
-	@JoinColumn(name = "deck_id", referencedColumnName = "deckId", insertable = false, updatable = false)
-    private List<Card> cards;
+	@ManyToOne
+    @JoinColumn(name = "deck_id", nullable = false) // Foreign key column
+	private Deck deck;
 	
 	// Maps card values to qabbalistic paths
 	@ManyToMany
@@ -52,8 +48,8 @@ public class Arrangement {
 	/**
 	 * @return the deck_id
 	 */
-	public Long getDeck_id() {
-		return deckId;
+	public Deck getDeck() {
+		return deck;
 	}
 	
 	public Path getQabbalisticCorrespondenceByCard(Long cardId) {
