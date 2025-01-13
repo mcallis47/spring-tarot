@@ -82,7 +82,7 @@ CREATE TABLE spread_descriptions (
     id PRIMARY KEY,
     description TEXT NOT NULL,
     spread_id INT NOT NULL,
-    description_order NOT NULL,
+    description_order INT NOT NULL,
     FOREIGN KEY (spread_id) REFERENCES spreads(id) ON DELETE SET NULL
 );
 
