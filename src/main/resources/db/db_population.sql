@@ -131,7 +131,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (75, 'Page of Coins', 'rw_page_coins.png', 'Ambition, learning, and opportunity.', 'A young figure studying a coin, symbolizing curiosity.', 'COINS', 11, 1),
 (76, 'Knight of Coins', 'rw_knight_coins.png', 'Responsibility, efficiency, and hard work.', 'A knight on horseback holding a coin, symbolizing diligent progress.', 'COINS', 12, 1),
 (77, 'Queen of Coins', 'rw_queen_coins.png', 'Nurturing, practicality, and abundance.', 'A queen seated with a coin, representing resourcefulness.', 'COINS', 13, 1),
-(78, 'King of Coins', 'rw_king_coins.png', 'Stability, security, and wealth.', 'A king seated with a coin, symbolizing material success.', 'COINS', 14, 1)
+(78, 'King of Coins', 'rw_king_coins.png', 'Stability, security, and wealth.', 'A king seated with a coin, symbolizing material success.', 'COINS', 14, 1),
 
 -- Tarot de Marseille
 
@@ -279,3 +279,253 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (205, 'Queen of Cups', 'bot_queen_cups.png', 'Empathy, nurturing, and emotional wisdom.', 'The Queen holds a cup, seated amidst calm waters, embodying deep emotional understanding.', 'CUPS', 13, 2),
 (206, 'Knight of Cups', 'bot_knight_cups.png', 'Romance, idealism, and emotional quest.', 'The Knight rides a horse, carrying a cup, representing the pursuit of love and inspiration.', 'CUPS', 14, 2);
 
+-- Minor Arcana: Swords (Book of Thoth)
+(207, 'Ace of Swords', 'bot_ace_swords.png', 'Clarity, intellect, and mental potential.', 'A single upright sword pierces the sky, surrounded by a crown, symbolizing the power of the mind.', 'SWORDS', 1, 2),
+(208, 'Two of Swords', 'bot_two_swords.png', 'Peace, balance, and decisions.', 'Two swords crossed in equilibrium, symbolizing truce and mental stability.', 'SWORDS', 2, 2),
+(209, 'Three of Swords', 'bot_three_swords.png', 'Sorrow, heartbreak, and separation.', 'Three swords pierce a flower, symbolizing pain and the need for emotional release.', 'SWORDS', 3, 2),
+(210, 'Four of Swords', 'bot_four_swords.png', 'Rest, recovery, and introspection.', 'Four swords arranged in balance, symbolizing a pause and the restoration of mental energy.', 'SWORDS', 4, 2),
+(211, 'Five of Swords', 'bot_five_swords.png', 'Defeat, conflict, and dishonor.', 'Five jagged swords clash, representing struggle and the cost of aggression.', 'SWORDS', 5, 2),
+(212, 'Six of Swords', 'bot_six_swords.png', 'Science, exploration, and transition.', 'Six swords arranged harmoniously, symbolizing intellectual progress and moving forward.', 'SWORDS', 6, 2),
+(213, 'Seven of Swords', 'bot_seven_swords.png', 'Futility, cunning, and strategy.', 'Seven swords scattered chaotically, representing cleverness and uncertain plans.', 'SWORDS', 7, 2),
+(214, 'Eight of Swords', 'bot_eight_swords.png', 'Interference, restriction, and paralysis.', 'Eight crossed swords create a barrier, symbolizing mental blocks and obstacles.', 'SWORDS', 8, 2),
+(215, 'Nine of Swords', 'bot_nine_swords.png', 'Cruelty, despair, and nightmares.', 'Nine jagged swords radiate harsh energy, symbolizing anguish and fear.', 'SWORDS', 9, 2),
+(216, 'Ten of Swords', 'bot_ten_swords.png', 'Ruin, finality, and collapse.', 'Ten shattered swords, symbolizing ultimate defeat and the end of a cycle.', 'SWORDS', 10, 2),
+(217, 'Princess of Swords', 'bot_princess_swords.png', 'Curiosity, insight, and vigilance.', 'The Princess wields a sword, cutting through illusions with her sharp intellect.', 'SWORDS', 11, 2),
+(218, 'Prince of Swords', 'bot_prince_swords.png', 'Action, intellect, and determination.', 'The Prince rides a chariot drawn by a winged being, symbolizing focused mental energy.', 'SWORDS', 12, 2),
+(219, 'Queen of Swords', 'bot_queen_swords.png', 'Perception, independence, and clarity.', 'The Queen, seated and holding a sword, represents mastery of the intellect and discernment.', 'SWORDS', 13, 2),
+(220, 'Knight of Swords', 'bot_knight_swords.png', 'Ambition, speed, and decisiveness.', 'The Knight charges forward with a raised sword, symbolizing unstoppable mental force.', 'SWORDS', 14, 2),
+
+-- Minor Arcana: Disks (Book of Thoth)
+(221, 'Ace of Disks', 'bot_ace_disks.png', 'Material potential, prosperity, and grounding.', 'A radiant disk surrounded by symbols of the earth, representing wealth and abundance.', 'DISKS', 1, 2),
+(222, 'Two of Disks', 'bot_two_disks.png', 'Change, flexibility, and balance.', 'Two interlocking disks with serpents, symbolizing the flow of energy and adaptability.', 'DISKS', 2, 2),
+(223, 'Three of Disks', 'bot_three_disks.png', 'Work, foundation, and collaboration.', 'Three disks form a solid structure, symbolizing effort and productive teamwork.', 'DISKS', 3, 2),
+(224, 'Four of Disks', 'bot_four_disks.png', 'Power, stability, and control.', 'Four disks arranged in a square, representing material security and authority.', 'DISKS', 4, 2),
+(225, 'Five of Disks', 'bot_five_disks.png', 'Worry, instability, and hardship.', 'Five disks overlapping unevenly, symbolizing material challenges and anxieties.', 'DISKS', 5, 2),
+(226, 'Six of Disks', 'bot_six_disks.png', 'Success, generosity, and harmony.', 'Six disks arranged symmetrically, symbolizing material balance and sharing.', 'DISKS', 6, 2),
+(227, 'Seven of Disks', 'bot_seven_disks.png', 'Failure, delay, and reassessment.', 'Seven disks show signs of decay, representing the need to reevaluate goals and efforts.', 'DISKS', 7, 2),
+(228, 'Eight of Disks', 'bot_eight_disks.png', 'Prudence, craftsmanship, and diligence.', 'Eight disks form a detailed pattern, symbolizing careful work and attention to detail.', 'DISKS', 8, 2),
+(229, 'Nine of Disks', 'bot_nine_disks.png', 'Gain, luxury, and self-sufficiency.', 'Nine disks adorned with symbols of wealth, representing material success and comfort.', 'DISKS', 9, 2),
+(230, 'Ten of Disks', 'bot_ten_disks.png', 'Wealth, legacy, and security.', 'Ten disks intricately connected, symbolizing the culmination of material success.', 'DISKS', 10, 2),
+(231, 'Princess of Disks', 'bot_princess_disks.png', 'Fertility, practicality, and creativity.', 'The Princess holds a disk, symbolizing the nurturing of material and creative growth.', 'DISKS', 11, 2),
+(232, 'Prince of Disks', 'bot_prince_disks.png', 'Responsibility, hard work, and determination.', 'The Prince drives a chariot pulled by an ox, symbolizing steady progress and persistence.', 'DISKS', 12, 2),
+(233, 'Queen of Disks', 'bot_queen_disks.png', 'Nurturing, abundance, and security.', 'The Queen sits amidst fertile lands, symbolizing care and material prosperity.', 'DISKS', 13, 2),
+(234, 'Knight of Disks', 'bot_knight_disks.png', 'Reliability, patience, and hard work.', 'The Knight rides a horse, holding a disk, representing steady and practical energy.', 'DISKS', 14, 2);
+
+insert into attributions (id, name, symbol, major_attribution_id, minor_attribution_id) values
+-- Insert planets
+(0, "Mars", "att_mars.png", null, null),
+(1, "Sun", "att_sun.png", null, null),
+(2, "Moon", "att_moon.png", null, null),
+(3, "Mercury", "att_mercury.png", null, null),
+(4, "Venus", "att_venus.png", null, null),
+(5, "Jupiter", "att_jupiter.png", null, null),
+(6, "Saturn", "att_saturn.png", null, null),
+(7, "Uranus", "att_uranus.png", null, null),
+(8, "Neptune", "att_neptune.png", null, null),
+(9, "Pluto", "att_pluto.png", null, null),
+
+-- Insert houses (related signs)
+(10, "Aries", "att_aries.png", null, null),
+(11, "Taurus", "att_taurus.png", null, null),
+(12, "Gemini", "att_gemini.png", null, null),
+(13, "Cancer", "att_cancer.png", null, null),
+(14, "Leo", "att_leo.png", null, null),
+(15, "Virgo", "att_virgo.png", null, null),
+(16, "Libra", "att_libra.png", null, null),
+(17, "Scorpio", "att_scorpio.png", null, null),
+(18, "Sagittarius", "att_sagittarius.png", null, null),
+(19, "Capricorn", "att_capricorn.png", null, null),
+(20, "Aquarius", "att_aquarius.png", null, null),
+(21, "Pisces", "att_pisces.png", null, null)
+
+-- Wands
+(22, "Mars in Aries", "att_mars_aries.png", 10, 0), -- 2 of Wands (Dominion)
+(23, "Sun in Aries", "att_sun_aries.png", 10, 1), -- 3 of Wands (Virtue)
+(24, "Venus in Aries", "att_venus_aries.png", 10, 4), -- 4 of Wands (Completion)
+(25, "Saturn in Leo", "att_saturn_leo.png", 14, 6), -- 5 of Wands (Strife)
+(26, "Jupiter in Leo", "att_jupiter_leo.png", 14, 5), -- 6 of Wands (Victory)
+(27, "Mars in Leo", "att_mars_leo.png", 14, 0), -- 7 of Wands (Valour)
+(28, "Mercury in Sagittarius", "att_mercury_sagittarius.png", 18, 3), -- 8 of Wands (Swiftness)
+(29, "Moon in Sagittarius", "att_moon_sagittarius.png", 18, 2), -- 9 of Wands (Strength)
+(30, "Saturn in Sagittarius", "att_saturn_sagittarius.png", 18, 6), -- 10 of Wands (Oppression)
+
+-- Cups
+(31, "Venus in Cancer", "att_venus_cancer.png", 13, 4), -- 2 of Cups (Love)
+(32, "Mercury in Cancer", "att_mercury_cancer.png", 13, 3), -- 3 of Cups (Abundance)
+(33, "Moon in Cancer", "att_moon_cancer.png", 13, 2), -- 4 of Cups (Luxury)
+(34, "Mars in Scorpio", "att_mars_scorpio.png", 17, 0), -- 5 of Cups (Disappointment)
+(35, "Sun in Scorpio", "att_sun_scorpio.png", 17, 1), -- 6 of Cups (Pleasure)
+(36, "Venus in Scorpio", "att_venus_scorpio.png", 17, 4), -- 7 of Cups (Debauch)
+(37, "Saturn in Pisces", "att_saturn_pisces.png", 21, 6), -- 8 of Cups (Indolence)
+(38, "Jupiter in Pisces", "att_jupiter_pisces.png", 21, 5), -- 9 of Cups (Happiness)
+(39, "Mars in Pisces", "att_mars_pisces.png", 21, 0), -- 10 of Cups (Satiety)
+
+-- Swords
+(40, "Moon in Libra", "att_moon_libra.png", 16, 2), -- 2 of Swords (Peace)
+(41, "Saturn in Libra", "att_saturn_libra.png", 16, 6), -- 3 of Swords (Sorrow)
+(42, "Jupiter in Libra", "att_jupiter_libra.png", 16, 5), -- 4 of Swords (Truce)
+(43, "Venus in Aquarius", "att_venus_aquarius.png", 20, 4), -- 5 of Swords (Defeat)
+(44, "Mercury in Aquarius", "att_mercury_aquarius.png", 20, 3), -- 6 of Swords (Science)
+(45, "Moon in Aquarius", "att_moon_aquarius.png", 20, 2), -- 7 of Swords (Futility)
+(46, "Jupiter in Gemini", "att_jupiter_gemini.png", 12, 5), -- 8 of Swords (Interference)
+(47, "Mars in Gemini", "att_mars_gemini.png", 12, 0), -- 9 of Swords (Cruelty)
+(48, "Sun in Gemini", "att_sun_gemini.png", 12, 1), -- 10 of Swords (Ruin)
+
+-- Disks
+(49, "Jupiter in Capricorn", "att_jupiter_capricorn.png", 19, 5), -- 2 of Disks (Change)
+(50, "Mars in Capricorn", "att_mars_capricorn.png", 19, 0), -- 3 of Disks (Work)
+(51, "Sun in Capricorn", "att_sun_capricorn.png", 19, 1), -- 4 of Disks (Power)
+(52, "Mercury in Taurus", "att_mercury_taurus.png", 11, 3), -- 5 of Disks (Worry)
+(53, "Moon in Taurus", "att_moon_taurus.png", 11, 2), -- 6 of Disks (Success)
+(54, "Saturn in Taurus", "att_saturn_taurus.png", 11, 6), -- 7 of Disks (Failure)
+(55, "Sun in Virgo", "att_sun_virgo.png", 15, 1), -- 8 of Disks (Prudence)
+(56, "Venus in Virgo", "att_venus_virgo.png", 15, 4), -- 9 of Disks (Gain)
+(57, "Mercury in Virgo", "att_mercury_virgo.png", 15, 3), -- 10 of Disks (Wealth)
+
+-- Classical Elements
+(58, "Fire", "att_fire.png", null, null),
+(59, "Water", "att_water.png", null, null),
+(60, "Earth", "att_earth.png", null, null),
+(61, "Air", "att_air.png", null, null),
+
+-- Elemental Combinations for Court Cards
+(62, "Fire of Fire", "att_fire_fire.png", 58, 58),
+(63, "Fire of Water", "att_fire_water.png", 59, 58),
+(64, "Fire of Earth", "att_fire_earth.png", 60, 58),
+(65, "Fire of Air", "att_fire_air.png", 61, 58),
+
+(66, "Water of Fire", "att_water_fire.png", 58, 59),
+(67, "Water of Water", "att_water_water.png", 59, 59),
+(68, "Water of Earth", "att_water_earth.png", 60, 59),
+(69, "Water of Air", "att_water_air.png", 61, 59),
+
+(70, "Earth of Fire", "att_earth_fire.png", 58, 60),
+(71, "Earth of Water", "att_earth_water.png", 59, 60),
+(72, "Earth of Earth", "att_earth_earth.png", 60, 60),
+(73, "Earth of Air", "att_earth_air.png", 61, 60),
+
+(74, "Air of Fire", "att_air_fire.png", 58, 61),
+(75, "Air of Water", "att_air_water.png", 59, 61),
+(76, "Air of Earth", "att_air_earth.png", 60, 61),
+(77, "Air of Air", "att_air_air.png", 61, 61);
+
+INSERT INTO spreads (id, name, source, description, description_ext, count, diagram) VALUES
+(1, 'Celtic Cross', 'Traditional', 'A 10-card spread for in-depth insights.', 
+    'The Celtic Cross is one of the most widely used tarot spreads, providing a comprehensive look at the querent’s situation. It explores past influences, present circumstances, and future outcomes, as well as internal and external factors.', 
+    10, 'sprd_celticcross.png'),
+(2, 'Three-Card Spread', 'Traditional', 'A simple spread for past, present, and future.', 
+    'This spread uses three cards to represent the past, present, and future influences on the querent’s question. It is versatile and often used for quick readings.', 
+    3, 'sprd_threecard.png'),
+(3, 'Horseshoe Spread', 'Traditional', 'A 7-card spread to assess a situation.', 
+    'The Horseshoe Spread is useful for analyzing situations with multiple factors. It covers the past, present, hidden influences, obstacles, attitudes of others, advice, and outcomes.', 
+    7, 'sprd_horseshoe.png'),
+(4, 'Relationship Spread', 'Unknown', 'A 6-card spread for relationship insights.', 
+    'This spread is designed to analyze romantic or interpersonal relationships. It examines both individuals’ perspectives, the dynamics between them, and potential outcomes.', 
+    6, 'sprd_relationship.png'),
+(5, 'Astrological Spread', 'Astrology Tradition', 'A 12-card spread based on zodiac houses.', 
+    'This spread places one card in each of the 12 astrological houses, providing insights into various life areas such as career, love, and spirituality.', 
+    12, 'sprd_astrological.png'),
+(6, 'Decision-Making Spread', 'Modern Practice', 'A 6-card spread for making decisions.', 
+    'This spread is designed to help the querent evaluate two choices by exploring the pros, cons, and potential outcomes of each option.', 
+    6, 'sprd_decisionmaking.png'),
+(7, 'Year Ahead Spread', 'Modern Practice', 'A 12-card spread for monthly forecasts.', 
+    'The Year Ahead Spread lays out one card for each month, giving the querent a detailed forecast of the year to come.', 
+    12, 'sprd_yearahead.png'),
+(8, 'Career Spread', 'Modern Practice', 'A 7-card spread focused on career guidance.', 
+    'This spread explores the querent’s career path by analyzing their goals, challenges, strengths, and potential opportunities.', 
+    7, 'sprd_career.png'),
+(9, 'Spiritual Path Spread', 'Esoteric Tradition', 'A 9-card spread for spiritual growth.', 
+    'This spread is designed to guide the querent on their spiritual journey, identifying lessons, challenges, and areas for growth.', 
+    9, 'sprd_spiritualpath.png'),
+(10, 'Five-Card Spread', 'Traditional', 'A 5-card spread for detailed advice.', 
+    'This spread uses five cards to provide focused advice on a single question, covering the context, challenge, advice, external influences, and outcome.', 
+    5, 'sprd_fivecard.png');
+
+INSERT INTO spread_descriptions (id, description, spread_id, description_order) VALUES
+-- Celtic Cross
+(1, 'The heart of the matter or the querent’s current situation.', 1, 1),
+(2, 'The immediate challenge or obstacle influencing the situation.', 1, 2),
+(3, 'The root cause or subconscious influence of the situation.', 1, 3),
+(4, 'The recent past and its impact on the present.', 1, 4),
+(5, 'The querent’s conscious thoughts or goals.', 1, 5),
+(6, 'The immediate future or short-term outcome.', 1, 6),
+(7, 'The querent’s internal feelings, fears, or hopes.', 1, 7),
+(8, 'External influences, including people or events.', 1, 8),
+(9, 'Hopes and fears surrounding the outcome.', 1, 9),
+(10, 'The final outcome of the situation.', 1, 10),
+-- Three-card
+(11, 'The past: Influences or events leading to the present.', 2, 1),
+(12, 'The present: The current situation or challenges.', 2, 2),
+(13, 'The future: Likely outcomes or next steps.', 2, 3),
+-- Horseshoe
+(14, 'The past: Key influences from the past.', 3, 1),
+(15, 'The present: The current state of affairs.', 3, 2),
+(16, 'Hidden influences: Unknown factors at play.', 3, 3),
+(17, 'Obstacles: Challenges or difficulties ahead.', 3, 4),
+(18, 'Attitudes of others: External perspectives or influences.', 3, 5),
+(19, 'Advice: Guidance or suggested actions.', 3, 6),
+(20, 'Outcome: The most likely resolution.', 3, 7),
+-- Relationship
+(21, 'How the querent views the relationship.', 4, 1),
+(22, 'How the other person views the relationship.', 4, 2),
+(23, 'The dynamics or energy between the two individuals.', 4, 3),
+(24, 'Challenges or obstacles in the relationship.', 4, 4),
+(25, 'Advice for the querent.', 4, 5),
+(26, 'Potential outcome for the relationship.', 4, 6),
+-- Astrological
+(27, 'First House: Self-image, physical appearance, and identity.', 5, 1),
+(28, 'Second House: Material possessions, wealth, and values.', 5, 2),
+(29, 'Third House: Communication, siblings, and immediate environment.', 5, 3),
+(30, 'Fourth House: Home, family, and emotional foundations.', 5, 4),
+(31, 'Fifth House: Creativity, children, and pleasures.', 5, 5),
+(32, 'Sixth House: Health, work, and daily routines.', 5, 6),
+(33, 'Seventh House: Partnerships, marriage, and close relationships.', 5, 7),
+(34, 'Eighth House: Transformation, shared resources, and rebirth.', 5, 8),
+(35, 'Ninth House: Philosophy, higher education, and travel.', 5, 9),
+(36, 'Tenth House: Career, status, and public image.', 5, 10),
+(37, 'Eleventh House: Friendships, community, and aspirations.', 5, 11),
+(38, 'Twelfth House: Subconscious, secrets, and spiritual growth.', 5, 12),
+-- Decision-making
+(39, 'Choice A: Pros of the first option.', 6, 1),
+(40, 'Choice A: Cons of the first option.', 6, 2),
+(41, 'Choice B: Pros of the second option.', 6, 3),
+(42, 'Choice B: Cons of the second option.', 6, 4),
+(43, 'Guidance: Advice for making the decision.', 6, 5),
+(44, 'Outcome: Likely result of the decision.', 6, 6),
+-- Year ahead
+(45, 'January: Theme or challenges for the month.', 7, 1),
+(46, 'February: Theme or challenges for the month.', 7, 2),
+(47, 'March: Theme or challenges for the month.', 7, 3),
+(48, 'April: Theme or challenges for the month.', 7, 4),
+(49, 'May: Theme or challenges for the month.', 7, 5),
+(50, 'June: Theme or challenges for the month.', 7, 6),
+(51, 'July: Theme or challenges for the month.', 7, 7),
+(52, 'August: Theme or challenges for the month.', 7, 8),
+(53, 'September: Theme or challenges for the month.', 7, 9),
+(54, 'October: Theme or challenges for the month.', 7, 10),
+(55, 'November: Theme or challenges for the month.', 7, 11),
+(56, 'December: Theme or challenges for the month.', 7, 12),
+-- Career
+(57, 'Current career situation: The querent’s current work environment or role.', 8, 1),
+(58, 'Challenges: Obstacles or difficulties in the career path.', 8, 2),
+(59, 'Strengths: The querent’s unique talents and skills.', 8, 3),
+(60, 'Opportunities: Potential growth or new directions.', 8, 4),
+(61, 'Advice: Guidance for achieving career goals.', 8, 5),
+(62, 'External influences: People or events affecting the career.', 8, 6),
+(63, 'Outcome: Likely result of the current career trajectory.', 8, 7),
+-- Spiritual Path
+(64, 'Where you are now: The querent’s current spiritual state.', 9, 1),
+(65, 'Challenges: Obstacles in the spiritual journey.', 9, 2),
+(66, 'Strengths: Spiritual strengths and resources available.', 9, 3),
+(67, 'Lesson to learn: A key spiritual lesson for growth.', 9, 4),
+(68, 'Guidance: Advice for navigating the spiritual path.', 9, 5),
+(69, 'External influences: Outside forces impacting spiritual growth.', 9, 6),
+(70, 'Next step: The immediate next action to take.', 9, 7),
+(71, 'Hidden influences: Subconscious or unknown factors at play.', 9, 8),
+(72, 'Outcome: The spiritual potential or resolution of the path.', 9, 9),
+-- Five Card
+(73, 'Context: The background or situation surrounding the question.', 10, 1),
+(74, 'Challenge: The primary obstacle or issue.', 10, 2),
+(75, 'Advice: Guidance for addressing the challenge.', 10, 3),
+(76, 'External influences: People or factors outside the querent’s control.', 10, 4),
+(77, 'Outcome: The likely resolution or result.', 10, 5);

@@ -37,7 +37,7 @@ CREATE TABLE paths (
 CREATE TABLE spreads (
     id INT PRIMARY KEY,
     name VARCHAR(20) NOT NULL,
-    source VARCHAR(20),
+    source VARCHAR(50),
     description TEXT NOT NULL,
     description_ext TEXT NOT NULL,
     count INT NOT NULL,
