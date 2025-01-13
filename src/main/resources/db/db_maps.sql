@@ -828,43 +828,38 @@ INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (3, 13, 1),  -- Path 13 <-> Kether
 
 -- Paths connected to Chochmah (Sefira 2)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (4, 11, 2),  -- Path 11 <-> Chochmah
 (5, 14, 2),  -- Path 14 <-> Chochmah
 (6, 15, 2),  -- Path 15 <-> Chochmah
 (7, 16, 2),  -- Path 16 <-> Chochmah
 
 -- Paths connected to Binah (Sefira 3)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (8, 12, 3), -- Path 12 <-> Binah
 (9, 14, 3), -- Path 14 <-> Binah
 (10, 17, 3), -- Path 17 <-> Binah
 (11, 18, 3), -- Path 18 <-> Binah
 
 -- Paths connected to Chesed (Sefira 4)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (12, 16, 4), -- Path 16 <-> Chesed
 (13, 19, 4), -- Path 19 <-> Chesed
 (14, 20, 4), -- Path 20 <-> Chesed
-(15, 21, 4); -- Path 21 <-> Chesed
+(15, 21, 4), -- Path 21 <-> Chesed
 
 -- Paths connected to Gevurah (Sefira 5)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (16, 18, 5), -- Path 18 <-> Gevurah
 (17, 19, 5), -- Path 19 <-> Gevurah
 (18, 22, 5), -- Path 22 <-> Gevurah
 (19, 23, 5), -- Path 23 <-> Gevurah
 
 -- Paths connected to Tiferet (Sefira 6)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (20, 13, 6), -- Path 13 <-> Tiferet
 (21, 15, 6), -- Path 15 <-> Tiferet
 (22, 17, 6), -- Path 17 <-> Tiferet
 (23, 20, 6), -- Path 20 <-> Tiferet
 (24, 22, 6), -- Path 22 <-> Tiferet
-(25, 24, 6); -- Path 24 <-> Tiferet
-(26, 25, 6); -- Path 25 <-> Tiferet
-(27, 26, 6); -- Path 26 <-> Tiferet
+(25, 24, 6), -- Path 24 <-> Tiferet
+(26, 25, 6), -- Path 25 <-> Tiferet
+(27, 26, 6), -- Path 26 <-> Tiferet
 
 -- Paths connected to Netzach (Sefira 7)
 INSERT INTO path_map (id, letter_id, sefira_id) VALUES
@@ -875,7 +870,6 @@ INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (32, 29, 7), -- Path 29 <-> Netzach
 
 -- Paths connected to Hod (Sefira 8)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (33, 23, 8), -- Path 23 <-> Hod
 (34, 26, 8), -- Path 26 <-> Hod
 (35, 27, 8), -- Path 27 <-> Hod
@@ -883,14 +877,12 @@ INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (37, 31, 8), -- Path 31 <-> Hod
 
 -- Paths connected to Yesod (Sefira 9)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (38, 22, 9), -- Path 25 <-> Yesod
 (39, 23, 9), -- Path 28 <-> Yesod
 (40, 24, 9), -- Path 30 <-> Yesod
 (41, 25, 9), -- Path 32 <-> Yesod
 
 -- Paths connected to Malkuth (Sefira 10)
-INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (42, 29, 10), -- Path 29 <-> Malkuth
 (43, 31, 10), -- Path 31 <-> Malkuth
-(44, 32, 10), -- Path 32 <-> Malkuth
+(44, 32, 10); -- Path 32 <-> Malkuth
