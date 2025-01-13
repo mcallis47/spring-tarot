@@ -53,7 +53,7 @@ CREATE TABLE decks (
 CREATE TABLE card_to_path (
     id PRIMARY KEY,
     arrangement_id INT NOT NULL,
-    path_id INT NOT NULL,
+    path_id INT DEFAULT NULL,
     card_id INT NOT NULL,
     FOREIGN KEY (arrangement_id) REFERENCES arrangements(id) ON DELETE SET NULL,
     FOREIGN KEY (path_id) REFERENCES paths(id) ON DELETE SET NULL,
@@ -62,8 +62,8 @@ CREATE TABLE card_to_path (
 
 CREATE TABLE card_to_attribution (
     id PRIMARY KEY,
-    arrangement_id INT NOT NULL,
-    attribution_id INT NOT NULL,
+    arrangement_id INT DEFAULT NULL,
+    attribution_id INT DEFAULT NULL,
     card_id INT NOT NULL,
     FOREIGN KEY (arrangement_id) REFERENCES arrangements(id) ON DELETE SET NULL,
     FOREIGN KEY (attribution_id) REFERENCES attributions(id) ON DELETE SET NULL,
