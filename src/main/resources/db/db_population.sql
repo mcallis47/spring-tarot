@@ -9,38 +9,38 @@ insert into decks (id, name, description) values (1, 'Tarot de Marseilles', 'Pla
 (2, 'Rider-Waite', 'Placeholder: It''s the one you all know'),
 (3, 'Book of Thoth', 'Placeholder: Eternal thanks to Frieda Harris for this artwork, and for bulling Crowley into doing a deck in the first place.');
 
-insert into paths (id, name, utterance, english_name, number) values (1, 'כֶּתֶר', 'Kether (Keṯer)', 'Crown', 1),
-(2, 'חָכְמָה', 'Chokmah (ḥoḵmā)', 'Wisdom', 2),
-(3, 'בִּינָה', 'Binah (Bīnā)', 'Understanding', 3),
-(4, 'חֶסֶד', 'Chesed (Ḥeseḏ)', 'Mercy', 4),
-(5, 'גְּבוּרָה', 'Geburah (Gəvūrā)', 'Strength', 5),
-(6, 'תִּפְאֶרֶת', 'Tiphereth (Tip̄ʾereṯ)', 'Beauty', 6),
-(7, 'נֶצַח', 'Netzach (Nēṣaḥ)', 'Victory', 7),
-(8, 'הוֹד', 'Hod (Hōḏ)', 'Splendour', 8),
-(9, 'יְסוֹד', 'Yesod (Yəsōḏ)', 'Foundation', 9),
-(10, 'מַלְכוּת', 'Malkuth (Malḵūṯ)', 'Kingdom', 10),
-(11, 'א', 'Aleph (ālef)', 'Ox', 11),
-(12, 'ב', 'Beth (bēt)', 'House', 12),
-(13, 'ג', 'Gimel (gīmel)', 'Camel', 13),
-(14, 'ד', 'Daleth (dāleth)', 'Door', 14),
-(15, 'ה', 'He (hē)', 'Window', 15),
-(16, 'ו', 'Vau (wāw)', 'Nail', 16),
-(17, 'ז', 'Zain (zayīn)', 'Sword', 17),
-(18, 'ח', 'Cheth (ḥēt)', 'Fence', 18),
-(19, 'ט', 'Teth (Ṭēth)', 'Serpent', 19),
-(20, 'י', 'Yod (yud)', 'Hand', 20),
-(21, 'כ', 'Kaph (kāp̄)', 'Palm', 21),
-(22, 'ל', 'Lamed (lāmeḏ)', 'Ox Goad', 22),
-(23, 'ם', 'Mem (mēm)', 'Water', 23),
-(24, 'נ', 'Nun (nūn)', 'Fish', 24),
-(25, 'ס', 'Samekh (sāmeḵ)', 'Prop', 25),
-(26, 'ע', 'Ayin (ayin)', 'Eye', 26),
-(27, 'פ', 'Peh (pē)', 'Mouth', 27),
-(28, 'צ', 'Tzaddi (ṣādī)', 'Fish-hook', 28),
-(29, 'ק', 'Qoph (qūp̄)', 'Back of head', 29),
-(30, 'ר', 'Resh (rēš)', 'Head', 30),
-(31, 'ש', 'Shin (šīn)', 'Tooth', 31),
-(32, 'ת', 'Tau (tav)', 'Cross/Mark', 32);
+insert into paths (id, name, utterance, english_name, number, path_type) values (1, 'כֶּתֶר', 'Kether (Keṯer)', 'Crown', 1, 'Sefira'),
+(2, 'חָכְמָה', 'Chokmah (ḥoḵmā)', 'Wisdom', 2, 'Sefira'),
+(3, 'בִּינָה', 'Binah (Bīnā)', 'Understanding', 3, 'Sefira'),
+(4, 'חֶסֶד', 'Chesed (Ḥeseḏ)', 'Mercy', 4, 'Sefira'),
+(5, 'גְּבוּרָה', 'Geburah (Gəvūrā)', 'Strength', 5, 'Sefira'),
+(6, 'תִּפְאֶרֶת', 'Tiphereth (Tip̄ʾereṯ)', 'Beauty', 6, 'Sefira'),
+(7, 'נֶצַח', 'Netzach (Nēṣaḥ)', 'Victory', 7, 'Sefira'),
+(8, 'הוֹד', 'Hod (Hōḏ)', 'Splendour', 8, 'Sefira'),
+(9, 'יְסוֹד', 'Yesod (Yəsōḏ)', 'Foundation', 9, 'Sefira'),
+(10, 'מַלְכוּת', 'Malkuth (Malḵūṯ)', 'Kingdom', 10, 'Sefira'),
+(11, 'א', 'Aleph (ālef)', 'Ox', 11, 'Letter'),
+(12, 'ב', 'Beth (bēt)', 'House', 12, 'Letter'),
+(13, 'ג', 'Gimel (gīmel)', 'Camel', 13, 'Letter'),
+(14, 'ד', 'Daleth (dāleth)', 'Door', 14, 'Letter'),
+(15, 'ה', 'He (hē)', 'Window', 15, 'Letter'),
+(16, 'ו', 'Vau (wāw)', 'Nail', 16, 'Letter'),
+(17, 'ז', 'Zain (zayīn)', 'Sword', 17, 'Letter'),
+(18, 'ח', 'Cheth (ḥēt)', 'Fence', 18, 'Letter'),
+(19, 'ט', 'Teth (Ṭēth)', 'Serpent', 19, 'Letter'),
+(20, 'י', 'Yod (yud)', 'Hand', 20, 'Letter'),
+(21, 'כ', 'Kaph (kāp̄)', 'Palm', 21, 'Letter'),
+(22, 'ל', 'Lamed (lāmeḏ)', 'Ox Goad', 22, 'Letter'),
+(23, 'ם', 'Mem (mēm)', 'Water', 23, 'Letter'),
+(24, 'נ', 'Nun (nūn)', 'Fish', 24, 'Letter'),
+(25, 'ס', 'Samekh (sāmeḵ)', 'Prop', 25, 'Letter'),
+(26, 'ע', 'Ayin (ayin)', 'Eye', 26, 'Letter'),
+(27, 'פ', 'Peh (pē)', 'Mouth', 27, 'Letter'),
+(28, 'צ', 'Tzaddi (ṣādī)', 'Fish-hook', 28, 'Letter'),
+(29, 'ק', 'Qoph (qūp̄)', 'Back of head', 29, 'Letter'),
+(30, 'ר', 'Resh (rēš)', 'Head', 30, 'Letter'),
+(31, 'ש', 'Shin (šīn)', 'Tooth', 31, 'Letter'),
+(32, 'ת', 'Tau (tav)', 'Cross/Mark', 32, 'Letter');
 
 insert into cards (id, name, image, description, description_ext, suit, val, deck_id) values 
 
@@ -311,103 +311,103 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (233, 'Queen of Disks', 'bot_queen_disks.png', 'Nurturing, abundance, and security.', 'The Queen sits amidst fertile lands, symbolizing care and material prosperity.', 'DISKS', 13, 2),
 (234, 'Knight of Disks', 'bot_knight_disks.png', 'Reliability, patience, and hard work.', 'The Knight rides a horse, holding a disk, representing steady and practical energy.', 'DISKS', 14, 2);
 
-insert into attributions (id, name, symbol, major_attribution_id, minor_attribution_id) values
+insert into attributions (id, name, symbol, major_attribution_id, minor_attribution_id, attribution_type) values
 -- Insert planets
-(0, 'Mars', 'att_mars.png', null, null),
-(1, 'Sun', 'att_sun.png', null, null),
-(2, 'Moon', 'att_moon.png', null, null),
-(3, 'Mercury', 'att_mercury.png', null, null),
-(4, 'Venus', 'att_venus.png', null, null),
-(5, 'Jupiter', 'att_jupiter.png', null, null),
-(6, 'Saturn', 'att_saturn.png', null, null),
-(7, 'Uranus', 'att_uranus.png', null, null),
-(8, 'Neptune', 'att_neptune.png', null, null),
-(9, 'Pluto', 'att_pluto.png', null, null),
+(0, 'Mars', 'att_mars.png', null, null, 'Sphere'),
+(1, 'Sun', 'att_sun.png', null, null, 'Sphere'),
+(2, 'Moon', 'att_moon.png', null, null, 'Sphere'),
+(3, 'Mercury', 'att_mercury.png', null, null, 'Sphere'),
+(4, 'Venus', 'att_venus.png', null, null, 'Sphere'),
+(5, 'Jupiter', 'att_jupiter.png', null, null, 'Sphere'),
+(6, 'Saturn', 'att_saturn.png', null, null, 'Sphere'),
+(7, 'Uranus', 'att_uranus.png', null, null, 'Sphere'),
+(8, 'Neptune', 'att_neptune.png', null, null, 'Sphere'),
+(9, 'Pluto', 'att_pluto.png', null, null, 'Sphere'),
 
 -- Insert houses (related signs)
-(10, 'Aries', 'att_aries.png', null, null),
-(11, 'Taurus', 'att_taurus.png', null, null),
-(12, 'Gemini', 'att_gemini.png', null, null),
-(13, 'Cancer', 'att_cancer.png', null, null),
-(14, 'Leo', 'att_leo.png', null, null),
-(15, 'Virgo', 'att_virgo.png', null, null),
-(16, 'Libra', 'att_libra.png', null, null),
-(17, 'Scorpio', 'att_scorpio.png', null, null),
-(18, 'Sagittarius', 'att_sagittarius.png', null, null),
-(19, 'Capricorn', 'att_capricorn.png', null, null),
-(20, 'Aquarius', 'att_aquarius.png', null, null),
-(21, 'Pisces', 'att_pisces.png', null, null),
+(10, 'Aries', 'att_aries.png', null, null, 'Sign'),
+(11, 'Taurus', 'att_taurus.png', null, null, 'Sign'),
+(12, 'Gemini', 'att_gemini.png', null, null, 'Sign'),
+(13, 'Cancer', 'att_cancer.png', null, null, 'Sign'),
+(14, 'Leo', 'att_leo.png', null, null, 'Sign'),
+(15, 'Virgo', 'att_virgo.png', null, null, 'Sign'),
+(16, 'Libra', 'att_libra.png', null, null, 'Sign'),
+(17, 'Scorpio', 'att_scorpio.png', null, null, 'Sign'),
+(18, 'Sagittarius', 'att_sagittarius.png', null, null, 'Sign'),
+(19, 'Capricorn', 'att_capricorn.png', null, null, 'Sign'),
+(20, 'Aquarius', 'att_aquarius.png', null, null, 'Sign'),
+(21, 'Pisces', 'att_pisces.png', null, null, 'Sign'),
 
 -- Wands
-(22, 'Mars in Aries', 'att_mars_aries.png', 10, 0), -- 2 of Wands (Dominion)
-(23, 'Sun in Aries', 'att_sun_aries.png', 10, 1), -- 3 of Wands (Virtue)
-(24, 'Venus in Aries', 'att_venus_aries.png', 10, 4), -- 4 of Wands (Completion)
-(25, 'Saturn in Leo', 'att_saturn_leo.png', 14, 6), -- 5 of Wands (Strife)
-(26, 'Jupiter in Leo', 'att_jupiter_leo.png', 14, 5), -- 6 of Wands (Victory)
-(27, 'Mars in Leo', 'att_mars_leo.png', 14, 0), -- 7 of Wands (Valour)
-(28, 'Mercury in Sagittarius', 'att_mercury_sagittarius.png', 18, 3), -- 8 of Wands (Swiftness)
-(29, 'Moon in Sagittarius', 'att_moon_sagittarius.png', 18, 2), -- 9 of Wands (Strength)
-(30, 'Saturn in Sagittarius', 'att_saturn_sagittarius.png', 18, 6), -- 10 of Wands (Oppression)
+(22, 'Mars in Aries', 'att_mars_aries.png', 10, 0, 'AttributionPair'), -- 2 of Wands (Dominion)
+(23, 'Sun in Aries', 'att_sun_aries.png', 10, 1, 'AttributionPair'), -- 3 of Wands (Virtue)
+(24, 'Venus in Aries', 'att_venus_aries.png', 10, 4, 'AttributionPair'), -- 4 of Wands (Completion)
+(25, 'Saturn in Leo', 'att_saturn_leo.png', 14, 6, 'AttributionPair'), -- 5 of Wands (Strife)
+(26, 'Jupiter in Leo', 'att_jupiter_leo.png', 14, 5, 'AttributionPair'), -- 6 of Wands (Victory)
+(27, 'Mars in Leo', 'att_mars_leo.png', 14, 0, 'AttributionPair'), -- 7 of Wands (Valour)
+(28, 'Mercury in Sagittarius', 'att_mercury_sagittarius.png', 18, 3, 'AttributionPair'), -- 8 of Wands (Swiftness)
+(29, 'Moon in Sagittarius', 'att_moon_sagittarius.png', 18, 2, 'AttributionPair'), -- 9 of Wands (Strength)
+(30, 'Saturn in Sagittarius', 'att_saturn_sagittarius.png', 18, 6, 'AttributionPair'), -- 10 of Wands (Oppression)
 
 -- Cups
-(31, 'Venus in Cancer', 'att_venus_cancer.png', 13, 4), -- 2 of Cups (Love)
-(32, 'Mercury in Cancer', 'att_mercury_cancer.png', 13, 3), -- 3 of Cups (Abundance)
-(33, 'Moon in Cancer', 'att_moon_cancer.png', 13, 2), -- 4 of Cups (Luxury)
-(34, 'Mars in Scorpio', 'att_mars_scorpio.png', 17, 0), -- 5 of Cups (Disappointment)
-(35, 'Sun in Scorpio', 'att_sun_scorpio.png', 17, 1), -- 6 of Cups (Pleasure)
-(36, 'Venus in Scorpio', 'att_venus_scorpio.png', 17, 4), -- 7 of Cups (Debauch)
-(37, 'Saturn in Pisces', 'att_saturn_pisces.png', 21, 6), -- 8 of Cups (Indolence)
-(38, 'Jupiter in Pisces', 'att_jupiter_pisces.png', 21, 5), -- 9 of Cups (Happiness)
-(39, 'Mars in Pisces', 'att_mars_pisces.png', 21, 0), -- 10 of Cups (Satiety)
+(31, 'Venus in Cancer', 'att_venus_cancer.png', 13, 4, 'AttributionPair'), -- 2 of Cups (Love)
+(32, 'Mercury in Cancer', 'att_mercury_cancer.png', 13, 3, 'AttributionPair'), -- 3 of Cups (Abundance)
+(33, 'Moon in Cancer', 'att_moon_cancer.png', 13, 2, 'AttributionPair'), -- 4 of Cups (Luxury)
+(34, 'Mars in Scorpio', 'att_mars_scorpio.png', 17, 0, 'AttributionPair'), -- 5 of Cups (Disappointment)
+(35, 'Sun in Scorpio', 'att_sun_scorpio.png', 17, 1, 'AttributionPair'), -- 6 of Cups (Pleasure)
+(36, 'Venus in Scorpio', 'att_venus_scorpio.png', 17, 4, 'AttributionPair'), -- 7 of Cups (Debauch)
+(37, 'Saturn in Pisces', 'att_saturn_pisces.png', 21, 6, 'AttributionPair'), -- 8 of Cups (Indolence)
+(38, 'Jupiter in Pisces', 'att_jupiter_pisces.png', 21, 5, 'AttributionPair'), -- 9 of Cups (Happiness)
+(39, 'Mars in Pisces', 'att_mars_pisces.png', 21, 0, 'AttributionPair'), -- 10 of Cups (Satiety)
 
 -- Swords
-(40, 'Moon in Libra', 'att_moon_libra.png', 16, 2), -- 2 of Swords (Peace)
-(41, 'Saturn in Libra', 'att_saturn_libra.png', 16, 6), -- 3 of Swords (Sorrow)
-(42, 'Jupiter in Libra', 'att_jupiter_libra.png', 16, 5), -- 4 of Swords (Truce)
-(43, 'Venus in Aquarius', 'att_venus_aquarius.png', 20, 4), -- 5 of Swords (Defeat)
-(44, 'Mercury in Aquarius', 'att_mercury_aquarius.png', 20, 3), -- 6 of Swords (Science)
-(45, 'Moon in Aquarius', 'att_moon_aquarius.png', 20, 2), -- 7 of Swords (Futility)
-(46, 'Jupiter in Gemini', 'att_jupiter_gemini.png', 12, 5), -- 8 of Swords (Interference)
-(47, 'Mars in Gemini', 'att_mars_gemini.png', 12, 0), -- 9 of Swords (Cruelty)
-(48, 'Sun in Gemini', 'att_sun_gemini.png', 12, 1), -- 10 of Swords (Ruin)
+(40, 'Moon in Libra', 'att_moon_libra.png', 16, 2, 'AttributionPair'), -- 2 of Swords (Peace)
+(41, 'Saturn in Libra', 'att_saturn_libra.png', 16, 6, 'AttributionPair'), -- 3 of Swords (Sorrow)
+(42, 'Jupiter in Libra', 'att_jupiter_libra.png', 16, 5, 'AttributionPair'), -- 4 of Swords (Truce)
+(43, 'Venus in Aquarius', 'att_venus_aquarius.png', 20, 4, 'AttributionPair'), -- 5 of Swords (Defeat)
+(44, 'Mercury in Aquarius', 'att_mercury_aquarius.png', 20, 3, 'AttributionPair'), -- 6 of Swords (Science)
+(45, 'Moon in Aquarius', 'att_moon_aquarius.png', 20, 2, 'AttributionPair'), -- 7 of Swords (Futility)
+(46, 'Jupiter in Gemini', 'att_jupiter_gemini.png', 12, 5, 'AttributionPair'), -- 8 of Swords (Interference)
+(47, 'Mars in Gemini', 'att_mars_gemini.png', 12, 0, 'AttributionPair'), -- 9 of Swords (Cruelty)
+(48, 'Sun in Gemini', 'att_sun_gemini.png', 12, 1, 'AttributionPair'), -- 10 of Swords (Ruin)
 
 -- Disks
-(49, 'Jupiter in Capricorn', 'att_jupiter_capricorn.png', 19, 5), -- 2 of Disks (Change)
-(50, 'Mars in Capricorn', 'att_mars_capricorn.png', 19, 0), -- 3 of Disks (Work)
-(51, 'Sun in Capricorn', 'att_sun_capricorn.png', 19, 1), -- 4 of Disks (Power)
-(52, 'Mercury in Taurus', 'att_mercury_taurus.png', 11, 3), -- 5 of Disks (Worry)
-(53, 'Moon in Taurus', 'att_moon_taurus.png', 11, 2), -- 6 of Disks (Success)
-(54, 'Saturn in Taurus', 'att_saturn_taurus.png', 11, 6), -- 7 of Disks (Failure)
-(55, 'Sun in Virgo', 'att_sun_virgo.png', 15, 1), -- 8 of Disks (Prudence)
-(56, 'Venus in Virgo', 'att_venus_virgo.png', 15, 4), -- 9 of Disks (Gain)
-(57, 'Mercury in Virgo', 'att_mercury_virgo.png', 15, 3), -- 10 of Disks (Wealth)
+(49, 'Jupiter in Capricorn', 'att_jupiter_capricorn.png', 19, 5, 'AttributionPair'), -- 2 of Disks (Change)
+(50, 'Mars in Capricorn', 'att_mars_capricorn.png', 19, 0, 'AttributionPair'), -- 3 of Disks (Work)
+(51, 'Sun in Capricorn', 'att_sun_capricorn.png', 19, 1, 'AttributionPair'), -- 4 of Disks (Power)
+(52, 'Mercury in Taurus', 'att_mercury_taurus.png', 11, 3, 'AttributionPair'), -- 5 of Disks (Worry)
+(53, 'Moon in Taurus', 'att_moon_taurus.png', 11, 2, 'AttributionPair'), -- 6 of Disks (Success)
+(54, 'Saturn in Taurus', 'att_saturn_taurus.png', 11, 6, 'AttributionPair'), -- 7 of Disks (Failure)
+(55, 'Sun in Virgo', 'att_sun_virgo.png', 15, 1, 'AttributionPair'), -- 8 of Disks (Prudence)
+(56, 'Venus in Virgo', 'att_venus_virgo.png', 15, 4, 'AttributionPair'), -- 9 of Disks (Gain)
+(57, 'Mercury in Virgo', 'att_mercury_virgo.png', 15, 3, 'AttributionPair'), -- 10 of Disks (Wealth)
 
 -- Classical Elements
-(58, 'Fire', 'att_fire.png', null, null),
-(59, 'Water', 'att_water.png', null, null),
-(60, 'Earth', 'att_earth.png', null, null),
-(61, 'Air', 'att_air.png', null, null),
+(58, 'Fire', 'att_fire.png', null, null, 'Element'),
+(59, 'Water', 'att_water.png', null, null, 'Element'),
+(60, 'Earth', 'att_earth.png', null, null, 'Element'),
+(61, 'Air', 'att_air.png', null, null, 'Element'),
 
 -- Elemental Combinations for Court Cards
-(62, 'Fire of Fire', 'att_fire_fire.png', 58, 58),
-(63, 'Fire of Water', 'att_fire_water.png', 59, 58),
-(64, 'Fire of Earth', 'att_fire_earth.png', 60, 58),
-(65, 'Fire of Air', 'att_fire_air.png', 61, 58),
+(62, 'Fire of Fire', 'att_fire_fire.png', 58, 58, 'AttributionPair'),
+(63, 'Fire of Water', 'att_fire_water.png', 59, 58, 'AttributionPair'),
+(64, 'Fire of Earth', 'att_fire_earth.png', 60, 58, 'AttributionPair'),
+(65, 'Fire of Air', 'att_fire_air.png', 61, 58, 'AttributionPair'),
 
-(66, 'Water of Fire', 'att_water_fire.png', 58, 59),
-(67, 'Water of Water', 'att_water_water.png', 59, 59),
-(68, 'Water of Earth', 'att_water_earth.png', 60, 59),
-(69, 'Water of Air', 'att_water_air.png', 61, 59),
+(66, 'Water of Fire', 'att_water_fire.png', 58, 59, 'AttributionPair'),
+(67, 'Water of Water', 'att_water_water.png', 59, 59, 'AttributionPair'),
+(68, 'Water of Earth', 'att_water_earth.png', 60, 59, 'AttributionPair'),
+(69, 'Water of Air', 'att_water_air.png', 61, 59, 'AttributionPair'),
 
-(70, 'Earth of Fire', 'att_earth_fire.png', 58, 60),
-(71, 'Earth of Water', 'att_earth_water.png', 59, 60),
-(72, 'Earth of Earth', 'att_earth_earth.png', 60, 60),
-(73, 'Earth of Air', 'att_earth_air.png', 61, 60),
+(70, 'Earth of Fire', 'att_earth_fire.png', 58, 60, 'AttributionPair'),
+(71, 'Earth of Water', 'att_earth_water.png', 59, 60, 'AttributionPair'),
+(72, 'Earth of Earth', 'att_earth_earth.png', 60, 60, 'AttributionPair'),
+(73, 'Earth of Air', 'att_earth_air.png', 61, 60, 'AttributionPair'),
 
-(74, 'Air of Fire', 'att_air_fire.png', 58, 61),
-(75, 'Air of Water', 'att_air_water.png', 59, 61),
-(76, 'Air of Earth', 'att_air_earth.png', 60, 61),
-(77, 'Air of Air', 'att_air_air.png', 61, 61);
+(74, 'Air of Fire', 'att_air_fire.png', 58, 61, 'AttributionPair'),
+(75, 'Air of Water', 'att_air_water.png', 59, 61, 'AttributionPair'),
+(76, 'Air of Earth', 'att_air_earth.png', 60, 61, 'AttributionPair'),
+(77, 'Air of Air', 'att_air_air.png', 61, 61, 'AttributionPair');
 
 INSERT INTO spreads (id, name, source, description, description_ext, count, diagram) VALUES
 (1, 'Celtic Cross', 'Traditional', 'A 10-card spread for in-depth insights.', 
@@ -443,89 +443,89 @@ INSERT INTO spreads (id, name, source, description, description_ext, count, diag
 
 INSERT INTO spread_descriptions (id, description, spread_id, description_order) VALUES
 -- Celtic Cross
-(1, 'The heart of the matter or the querent’s current situation.', 1, 1),
-(2, 'The immediate challenge or obstacle influencing the situation.', 1, 2),
-(3, 'The root cause or subconscious influence of the situation.', 1, 3),
-(4, 'The recent past and its impact on the present.', 1, 4),
-(5, 'The querent’s conscious thoughts or goals.', 1, 5),
-(6, 'The immediate future or short-term outcome.', 1, 6),
-(7, 'The querent’s internal feelings, fears, or hopes.', 1, 7),
-(8, 'External influences, including people or events.', 1, 8),
-(9, 'Hopes and fears surrounding the outcome.', 1, 9),
-(10, 'The final outcome of the situation.', 1, 10),
+(1, 'The heart of the matter or the querent’s current situation.', 1, 0),
+(2, 'The immediate challenge or obstacle influencing the situation.', 1, 1),
+(3, 'The root cause or subconscious influence of the situation.', 1, 2),
+(4, 'The recent past and its impact on the present.', 1, 3),
+(5, 'The querent’s conscious thoughts or goals.', 1, 4),
+(6, 'The immediate future or short-term outcome.', 1, 5),
+(7, 'The querent’s internal feelings, fears, or hopes.', 1, 6),
+(8, 'External influences, including people or events.', 1, 7),
+(9, 'Hopes and fears surrounding the outcome.', 1, 8),
+(10, 'The final outcome of the situation.', 1, 9),
 -- Three-card
-(11, 'The past: Influences or events leading to the present.', 2, 1),
-(12, 'The present: The current situation or challenges.', 2, 2),
-(13, 'The future: Likely outcomes or next steps.', 2, 3),
+(11, 'The past: Influences or events leading to the present.', 2, 0),
+(12, 'The present: The current situation or challenges.', 2, 1),
+(13, 'The future: Likely outcomes or next steps.', 2, 2),
 -- Horseshoe
-(14, 'The past: Key influences from the past.', 3, 1),
-(15, 'The present: The current state of affairs.', 3, 2),
-(16, 'Hidden influences: Unknown factors at play.', 3, 3),
-(17, 'Obstacles: Challenges or difficulties ahead.', 3, 4),
-(18, 'Attitudes of others: External perspectives or influences.', 3, 5),
-(19, 'Advice: Guidance or suggested actions.', 3, 6),
-(20, 'Outcome: The most likely resolution.', 3, 7),
+(14, 'The past: Key influences from the past.', 3, 0),
+(15, 'The present: The current state of affairs.', 3, 1),
+(16, 'Hidden influences: Unknown factors at play.', 3, 2),
+(17, 'Obstacles: Challenges or difficulties ahead.', 3, 3),
+(18, 'Attitudes of others: External perspectives or influences.', 3, 4),
+(19, 'Advice: Guidance or suggested actions.', 3, 5),
+(20, 'Outcome: The most likely resolution.', 3, 6),
 -- Relationship
-(21, 'How the querent views the relationship.', 4, 1),
-(22, 'How the other person views the relationship.', 4, 2),
-(23, 'The dynamics or energy between the two individuals.', 4, 3),
-(24, 'Challenges or obstacles in the relationship.', 4, 4),
-(25, 'Advice for the querent.', 4, 5),
-(26, 'Potential outcome for the relationship.', 4, 6),
+(21, 'How the querent views the relationship.', 4, 0),
+(22, 'How the other person views the relationship.', 4, 1),
+(23, 'The dynamics or energy between the two individuals.', 4, 2),
+(24, 'Challenges or obstacles in the relationship.', 4, 3),
+(25, 'Advice for the querent.', 4, 4),
+(26, 'Potential outcome for the relationship.', 4, 5),
 -- Astrological
-(27, 'First House: Self-image, physical appearance, and identity.', 5, 1),
-(28, 'Second House: Material possessions, wealth, and values.', 5, 2),
-(29, 'Third House: Communication, siblings, and immediate environment.', 5, 3),
-(30, 'Fourth House: Home, family, and emotional foundations.', 5, 4),
-(31, 'Fifth House: Creativity, children, and pleasures.', 5, 5),
-(32, 'Sixth House: Health, work, and daily routines.', 5, 6),
-(33, 'Seventh House: Partnerships, marriage, and close relationships.', 5, 7),
-(34, 'Eighth House: Transformation, shared resources, and rebirth.', 5, 8),
-(35, 'Ninth House: Philosophy, higher education, and travel.', 5, 9),
-(36, 'Tenth House: Career, status, and public image.', 5, 10),
-(37, 'Eleventh House: Friendships, community, and aspirations.', 5, 11),
-(38, 'Twelfth House: Subconscious, secrets, and spiritual growth.', 5, 12),
+(27, 'First House: Self-image, physical appearance, and identity.', 5, 0),
+(28, 'Second House: Material possessions, wealth, and values.', 5, 1),
+(29, 'Third House: Communication, siblings, and immediate environment.', 5, 2),
+(30, 'Fourth House: Home, family, and emotional foundations.', 5, 3),
+(31, 'Fifth House: Creativity, children, and pleasures.', 5, 4),
+(32, 'Sixth House: Health, work, and daily routines.', 5, 5),
+(33, 'Seventh House: Partnerships, marriage, and close relationships.', 5, 6),
+(34, 'Eighth House: Transformation, shared resources, and rebirth.', 5, 7),
+(35, 'Ninth House: Philosophy, higher education, and travel.', 5, 8),
+(36, 'Tenth House: Career, status, and public image.', 5, 9),
+(37, 'Eleventh House: Friendships, community, and aspirations.', 5, 10),
+(38, 'Twelfth House: Subconscious, secrets, and spiritual growth.', 5, 11),
 -- Decision-making
-(39, 'Choice A: Pros of the first option.', 6, 1),
-(40, 'Choice A: Cons of the first option.', 6, 2),
-(41, 'Choice B: Pros of the second option.', 6, 3),
-(42, 'Choice B: Cons of the second option.', 6, 4),
-(43, 'Guidance: Advice for making the decision.', 6, 5),
-(44, 'Outcome: Likely result of the decision.', 6, 6),
+(39, 'Choice A: Pros of the first option.', 6, 0),
+(40, 'Choice A: Cons of the first option.', 6, 1),
+(41, 'Choice B: Pros of the second option.', 6, 2),
+(42, 'Choice B: Cons of the second option.', 6, 3),
+(43, 'Guidance: Advice for making the decision.', 6, 4),
+(44, 'Outcome: Likely result of the decision.', 6, 5),
 -- Year ahead
-(45, 'January: Theme or challenges for the month.', 7, 1),
-(46, 'February: Theme or challenges for the month.', 7, 2),
-(47, 'March: Theme or challenges for the month.', 7, 3),
-(48, 'April: Theme or challenges for the month.', 7, 4),
-(49, 'May: Theme or challenges for the month.', 7, 5),
-(50, 'June: Theme or challenges for the month.', 7, 6),
-(51, 'July: Theme or challenges for the month.', 7, 7),
-(52, 'August: Theme or challenges for the month.', 7, 8),
-(53, 'September: Theme or challenges for the month.', 7, 9),
-(54, 'October: Theme or challenges for the month.', 7, 10),
-(55, 'November: Theme or challenges for the month.', 7, 11),
-(56, 'December: Theme or challenges for the month.', 7, 12),
+(45, 'January: Theme or challenges for the month.', 7, 0),
+(46, 'February: Theme or challenges for the month.', 7, 1),
+(47, 'March: Theme or challenges for the month.', 7, 2),
+(48, 'April: Theme or challenges for the month.', 7, 3),
+(49, 'May: Theme or challenges for the month.', 7, 4),
+(50, 'June: Theme or challenges for the month.', 7, 5),
+(51, 'July: Theme or challenges for the month.', 7, 6),
+(52, 'August: Theme or challenges for the month.', 7, 7),
+(53, 'September: Theme or challenges for the month.', 7, 8),
+(54, 'October: Theme or challenges for the month.', 7, 9),
+(55, 'November: Theme or challenges for the month.', 7, 10),
+(56, 'December: Theme or challenges for the month.', 7, 11),
 -- Career
-(57, 'Current career situation: The querent’s current work environment or role.', 8, 1),
-(58, 'Challenges: Obstacles or difficulties in the career path.', 8, 2),
-(59, 'Strengths: The querent’s unique talents and skills.', 8, 3),
-(60, 'Opportunities: Potential growth or new directions.', 8, 4),
-(61, 'Advice: Guidance for achieving career goals.', 8, 5),
-(62, 'External influences: People or events affecting the career.', 8, 6),
-(63, 'Outcome: Likely result of the current career trajectory.', 8, 7),
+(57, 'Current career situation: The querent’s current work environment or role.', 8, 0),
+(58, 'Challenges: Obstacles or difficulties in the career path.', 8, 1),
+(59, 'Strengths: The querent’s unique talents and skills.', 8, 2),
+(60, 'Opportunities: Potential growth or new directions.', 8, 3),
+(61, 'Advice: Guidance for achieving career goals.', 8, 4),
+(62, 'External influences: People or events affecting the career.', 8, 5),
+(63, 'Outcome: Likely result of the current career trajectory.', 8, 6),
 -- Spiritual Path
-(64, 'Where you are now: The querent’s current spiritual state.', 9, 1),
-(65, 'Challenges: Obstacles in the spiritual journey.', 9, 2),
-(66, 'Strengths: Spiritual strengths and resources available.', 9, 3),
-(67, 'Lesson to learn: A key spiritual lesson for growth.', 9, 4),
-(68, 'Guidance: Advice for navigating the spiritual path.', 9, 5),
-(69, 'External influences: Outside forces impacting spiritual growth.', 9, 6),
-(70, 'Next step: The immediate next action to take.', 9, 7),
-(71, 'Hidden influences: Subconscious or unknown factors at play.', 9, 8),
-(72, 'Outcome: The spiritual potential or resolution of the path.', 9, 9),
+(64, 'Where you are now: The querent’s current spiritual state.', 9, 0),
+(65, 'Challenges: Obstacles in the spiritual journey.', 9, 1),
+(66, 'Strengths: Spiritual strengths and resources available.', 9, 2),
+(67, 'Lesson to learn: A key spiritual lesson for growth.', 9, 3),
+(68, 'Guidance: Advice for navigating the spiritual path.', 9, 4),
+(69, 'External influences: Outside forces impacting spiritual growth.', 9, 5),
+(70, 'Next step: The immediate next action to take.', 9, 6),
+(71, 'Hidden influences: Subconscious or unknown factors at play.', 9, 7),
+(72, 'Outcome: The spiritual potential or resolution of the path.', 9, 8),
 -- Five Card
-(73, 'Context: The background or situation surrounding the question.', 10, 1),
-(74, 'Challenge: The primary obstacle or issue.', 10, 2),
-(75, 'Advice: Guidance for addressing the challenge.', 10, 3),
-(76, 'External influences: People or factors outside the querent’s control.', 10, 4),
-(77, 'Outcome: The likely resolution or result.', 10, 5);
+(73, 'Context: The background or situation surrounding the question.', 10, 0),
+(74, 'Challenge: The primary obstacle or issue.', 10, 1),
+(75, 'Advice: Guidance for addressing the challenge.', 10, 2),
+(76, 'External influences: People or factors outside the querent’s control.', 10, 3),
+(77, 'Outcome: The likely resolution or result.', 10, 4);

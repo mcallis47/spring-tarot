@@ -4,6 +4,7 @@ CREATE TABLE attributions (
     symbol VARCHAR(50) NOT NULL UNIQUE,
     major_attribution_id INT DEFAULT NULL,
     minor_attribution_id INT DEFAULT NULL,
+    attribution_type VARCHAR(30) NOT NULL,
     CONSTRAINT fk_major_attribution FOREIGN KEY (major_attribution_id) REFERENCES attributions(id) ON DELETE SET NULL,
     CONSTRAINT fk_minor_attribution FOREIGN KEY (minor_attribution_id) REFERENCES attributions(id) ON DELETE SET NULL
 );
@@ -31,7 +32,8 @@ CREATE TABLE paths (
     name VARCHAR(10) NOT NULL UNIQUE,
     utterance VARCHAR(50) NOT NULL UNIQUE,
     english_name VARCHAR(50) NOT NULL UNIQUE,
-    number INT NOT NULL
+    number INT NOT NULL,
+    path_type VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE spreads (

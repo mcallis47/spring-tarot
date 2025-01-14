@@ -12,12 +12,15 @@ import jakarta.persistence.Table;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "Attribution_Type")
+@DiscriminatorColumn(name = "attribution_type")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Table(name = "attributions")
 public abstract class Attribution {
 	@Id
     private Long id; // Unique identifier for the attribution
+	public Long getId() {
+		return id;
+	}
 	private String name; // English name of attribution
 	private String symbol; // URI of symbol
 	/**
