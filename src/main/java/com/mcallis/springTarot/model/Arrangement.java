@@ -15,12 +15,12 @@ public class Arrangement {
 	
 	private String description;
 	
-	@ManyToOne
+	@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name = "deck_id", nullable = false) // Foreign key column
 	private Deck deck;
 	
 	// Maps card values to qabbalistic paths
-	@ManyToMany
+	@ManyToMany(fetch=FetchType.EAGER)
     @JoinTable(
         name = "card_to_path",
         joinColumns = @JoinColumn(name = "arrangement_id"),
@@ -36,7 +36,7 @@ public class Arrangement {
 
 
 	// Maps qabbalistic paths to attribution
-	@ManyToMany
+	@ManyToMany(fetch=FetchType.EAGER)
 	@JoinTable(
 	    name = "card_to_attribution",
 	    joinColumns = @JoinColumn(name = "arrangement_id"),
@@ -69,8 +69,8 @@ public class Arrangement {
 		return correspondences.get(cardId);
 	}
 	
-	public Attribution getZodiacalCorrespondenceByElement(Long elementId) {
-		return attributions.get(elementId);
+	public Attribution getZodiacalCorrespondenceByElement(Long cardId) {
+		return attributions.get(cardId);
 	}
 
 

@@ -5,6 +5,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.*;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -18,7 +19,7 @@ public class Deck {
 	private String name;
 	private String description;
 	// List to hold the cards in the deck
-	@OneToMany(mappedBy="deck")
+	@OneToMany(mappedBy="deck",fetch=FetchType.EAGER)
 	private List<Card> cards;
 	public List<Card> getCards() {
 		return cards;
