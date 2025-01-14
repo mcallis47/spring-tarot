@@ -2,7 +2,6 @@ package com.mcallis.springTarot.model;
 
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -14,7 +13,7 @@ public class Deck {
 	private String name;
 	private String description;
 	// List to hold the cards in the deck
-	@OneToMany(mappedBy="deck", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy="deck")
 	private List<Card> cards;
 	/**
 	 * @return the name

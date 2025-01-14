@@ -12,6 +12,6 @@ import com.mcallis.springTarot.model.Arrangement;
 @Repository
 public interface ArrangementRepository extends JpaRepository<Arrangement, Long> {
 	
-	@Query("Select a from Arrangement a WHERE LOWER(a.name) LIKE LOWER(:name) LIMIT 1")
+	@Query("Select a from Arrangement a WHERE LOWER(a.name) LIKE LOWER(:name)")
 	Optional<Arrangement> findByName(@Param("name") String name);
 }

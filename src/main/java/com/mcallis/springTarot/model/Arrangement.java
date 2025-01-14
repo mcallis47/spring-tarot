@@ -2,7 +2,7 @@ package com.mcallis.springTarot.model;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.data.annotation.Id;
+
 
 import jakarta.persistence.*;
 @Entity

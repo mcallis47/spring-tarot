@@ -13,8 +13,8 @@ import com.mcallis.springTarot.model.Card;
 @Repository
 public interface CardRepository extends JpaRepository<Card, Long> {
 	
-	@Query("Select c from Card c WHERE c.suit = :suit AND c.val = :val AND c.deck_id = :deckId")
-	Optional<Card> findByInfo(@Param("suit") String suit, @Param("val") int val, @Param("deckId") int deckId);
+	//@Query("Select c from Card c WHERE c.suit = :suit AND c.val = :val AND c.deck_id = :deckId")
+	//Optional<Card> findByInfo(@Param("suit") String suit, @Param("val") int val, @Param("deckId") int deckId);
 	
 	@Query("Select c from Card c WHERE c.suit = :suit AND c.val = :val")
 	List<Card> findVariantsByInfo(@Param("suit") String suit, @Param("val") int val);

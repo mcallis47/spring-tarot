@@ -13,15 +13,15 @@ import com.mcallis.springTarot.model.Path;
 @Repository
 public interface PathRepository extends JpaRepository<Path, Long> {
 	
-	@Query("Select a from Path a WHERE a.name = :name LIMIT 1")
+	@Query("Select a from Path a WHERE a.name = :name")
 	Optional<Path> findByName(@Param("name") String name);
 	
-	@Query("Select a from Path a WHERE a.number = :number LIMIT 1")
+	@Query("Select a from Path a WHERE a.number = :number")
 	Optional<Path> findByNumber(@Param("number") int number);
 	
-	@Query("Select a from Path a WHERE a.sefira_id IS NOT NULL")
+	@Query(value = "Select a from paths a WHERE a.sefira_id IS NOT NULL", nativeQuery = true)
 	List<Path> findLetters();
 	
-	@Query("Select a from Path a WHERE a.letter_id IS NOT NULL")
+	@Query(value = "Select a from paths a WHERE a.letter_id IS NOT NULL", nativeQuery = true)
 	List<Path> findSefirot();
 }

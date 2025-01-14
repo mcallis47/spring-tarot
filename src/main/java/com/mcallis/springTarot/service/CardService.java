@@ -28,9 +28,9 @@ public class CardService {
 		return cardRepository.findById(id);
 	}
 	
-	public Optional<Card> getByInfo(String suit, int val, int deckId){
-		return cardRepository.findByInfo(suit,  val, deckId);
-	}
+	//public Optional<Card> getByInfo(String suit, int val, int deckId){
+	//	return cardRepository.findByInfo(suit,  val, deckId);
+	//}
 	
 //	public Optional<CardExtended> getExtendedCardByArrangementId(String suit, int val, int deckId, Long arrangementId){
 //		Optional<Card> baseCard = cardRepository.findByInfo(suit, val, deckId);
