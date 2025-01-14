@@ -5,6 +5,7 @@ import java.util.List;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "spreads")
 public class Spread {
 	@Id
     private Long id; // Unique identifier for spread

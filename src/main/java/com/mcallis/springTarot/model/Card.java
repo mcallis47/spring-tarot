@@ -11,11 +11,12 @@ import jakarta.persistence.*;
  * 
  */
 @Entity
+@Table(name = "cards")
 public class Card {
 	// Fields for the Card class
 	@Id
     protected Long id; // Unique identifier for the card
-	protected String displayName; // Name of the card
+	protected String name; // Name of the card
 	protected String image; // Path or URL to the card's image
 	protected String description; // A brief description of the card
 	protected String description_ext; // An extended description of the card and symbolism found in it
@@ -34,7 +35,7 @@ public class Card {
 
 
     public String getName() {
-        return displayName;
+        return name;
     }
 
 

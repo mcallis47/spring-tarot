@@ -6,6 +6,7 @@ import java.util.Map;
 
 import jakarta.persistence.*;
 @Entity
+@Table(name = "arrangements")
 public class Arrangement {
 	@Id
     private Long id;
@@ -28,6 +29,12 @@ public class Arrangement {
     @MapKeyColumn(name = "card_id") // The column to store the integer key
     private Map<Long, Path> correspondences = new HashMap<>();
 	
+	public Map<Long, Path> getCorrespondences() {
+		return correspondences;
+	}
+
+
+
 	// Maps qabbalistic paths to attribution
 	@ManyToMany
 	@JoinTable(
@@ -38,6 +45,12 @@ public class Arrangement {
 	@MapKeyColumn(name = "card_id") // The column to store the integer key
 	private Map<Long, Attribution> attributions = new HashMap<>();
     
+
+	public Map<Long, Attribution> getAttributions() {
+		return attributions;
+	}
+
+
 
 	public String getName() {
 		return name;

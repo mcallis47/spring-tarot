@@ -21,7 +21,7 @@ public class ArrangementController {
 	    return service.getArrangements();
 	}
 	
-	@GetMapping("/arrangements/id")
+	@GetMapping("/arrangements/{id}")
 	Arrangement getArrangement(@PathVariable Long id) {
 		return service.getArrangementById(id).get();
 	}

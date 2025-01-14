@@ -12,7 +12,7 @@ public class CardExtended extends Card {
 	
 	public CardExtended(Card baseCard, Arrangement arrangement) {
 		this.id = baseCard.id;
-		this.displayName = baseCard.displayName;
+		this.name = baseCard.name;
 		this.image = baseCard.image;
 		this.description = baseCard.description;
 		this.description_ext = baseCard.description_ext;
