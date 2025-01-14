@@ -859,7 +859,7 @@ INSERT INTO path_map (id, letter_id, sefira_id) VALUES
 (24, 22, 6), -- Path 22 <-> Tiferet
 (25, 24, 6), -- Path 24 <-> Tiferet
 (26, 25, 6), -- Path 25 <-> Tiferet
-(27, 26, 6), -- Path 26 <-> Tiferet
+(27, 26, 6); -- Path 26 <-> Tiferet
 
 -- Paths connected to Netzach (Sefira 7)
 INSERT INTO path_map (id, letter_id, sefira_id) VALUES
