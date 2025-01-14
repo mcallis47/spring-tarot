@@ -1,52 +1,52 @@
-﻿insert into arrangements (id, name, description, deck_id) values (1, 'Tarot de Marseilles', 'Placeholder: The earliest Italian Tarot decks were unnumbered, but as early as 1490 card makers in Ferrara, Italy, began to place Roman numerals on the trumps, fixing them into a specific sequence. This practice was carried on by the early French card makers. It is uncertain which of the Italian trump sequences was adopted in what came to be known as the Tarot of Marseilles, but it is speculated that it may have been the ordering used by the Tarot card makers of Milan.', 1)
+﻿insert into arrangements (id, name, description, deck_id) values (1, 'Tarot de Marseilles', 'Placeholder: The earliest Italian Tarot decks were unnumbered, but as early as 1490 card makers in Ferrara, Italy, began to place Roman numerals on the trumps, fixing them into a specific sequence. This practice was carried on by the early French card makers. It is uncertain which of the Italian trump sequences was adopted in what came to be known as the Tarot of Marseilles, but it is speculated that it may have been the ordering used by the Tarot card makers of Milan.', 1),
 (2, 'Elphias Levi', 'Placeholder: When Éliphas Lévi brought forth the second volume of his two-part Dogme et Rituel de la Haute Magie, he applied the sequence of the Tarot de Marseilles trumps to the Hebrew alphabet in its traditional order, but he placed the Fool just before the final numbered trump, on the second-last Hebrew letter. Either he did not understand Court de Gébelin’s intention to invert the sequence of trumps, or as seems more likely, he chose to ignore it, or was under oath not to reveal it. He was convinced that the posture of the upper body of the Juggler defined the shape of the first Hebrew letter, Aleph, writing “His body and arms constitute the letter Aleph.” This cannot be denied, but since few, if any, of the other figures on the cards resemble their Hebrew letters, its significance is questionable.
-Levi makes no open mention of Sepher Yetzirah attributions.', 1)
-(3, 'Golden Dawn', 'Placeholder: Included in the esocteric teachings decyphered in the foundational cypher manuscripts of the Golden Dawn, was an authoritative determination that the Fool be placed as the first of the Tarot trumps, before the Juggler, (which in the Golden Dawn Tarot was called the Magician). This advanced all the other Trump associations by one letter, (ex, the Magician now being attributed to Beth, instead of Aleph), which puts the imagery of cards into near perfect alignment with their various zodiacal and elemental attributions as given in the Sepher Yetzirah, save for one more exception to the sequence.', 2)
-(4, 'Aleister Crowley', 'Truncated Placeholder: Crowley changed the sign attributions of the paths with his Emperor / Star swap specifically to make my database relationships more complicated', 3)
+Levi makes no open mention of Sepher Yetzirah attributions.', 1),
+(3, 'Golden Dawn', 'Placeholder: Included in the esocteric teachings decyphered in the foundational cypher manuscripts of the Golden Dawn, was an authoritative determination that the Fool be placed as the first of the Tarot trumps, before the Juggler, (which in the Golden Dawn Tarot was called the Magician). This advanced all the other Trump associations by one letter, (ex, the Magician now being attributed to Beth, instead of Aleph), which puts the imagery of cards into near perfect alignment with their various zodiacal and elemental attributions as given in the Sepher Yetzirah, save for one more exception to the sequence.', 2),
+(4, 'Aleister Crowley', 'Truncated Placeholder: Crowley changed the sign attributions of the paths with his Emperor / Star swap specifically to make my database relationships more complicated', 3),
 (5, 'Frater Achad', 'Placeholder: Tarot for bats', 3);
 
-insert into decks (id, name, description) values (1, 'Tarot de Marseilles', 'Placeholder: The earliest Italian Tarot decks were unnumbered, but as early as 1490 card makers in Ferrara, Italy, began to place Roman numerals on the trumps, fixing them into a specific sequence. This practice was carried on by the early French card makers. It is uncertain which of the Italian trump sequences was adopted in what came to be known as the Tarot of Marseilles, but it is speculated that it may have been the ordering used by the Tarot card makers of Milan.')
-(2, 'Rider-Waite', 'Placeholder: It\'s the one you all know')
+insert into decks (id, name, description) values (1, 'Tarot de Marseilles', 'Placeholder: The earliest Italian Tarot decks were unnumbered, but as early as 1490 card makers in Ferrara, Italy, began to place Roman numerals on the trumps, fixing them into a specific sequence. This practice was carried on by the early French card makers. It is uncertain which of the Italian trump sequences was adopted in what came to be known as the Tarot of Marseilles, but it is speculated that it may have been the ordering used by the Tarot card makers of Milan.'),
+(2, 'Rider-Waite', 'Placeholder: It''s the one you all know'),
 (3, 'Book of Thoth', 'Placeholder: Eternal thanks to Frieda Harris for this artwork, and for bulling Crowley into doing a deck in the first place.');
 
-insert into paths (id, name, utterance, english_name, number) values (1, 'כֶּתֶר', 'Kether (Keṯer)', 'Crown', 1)
-(2, 'חָכְמָה', 'Chokmah (ḥoḵmā)', 'Wisdom', 2)
-(3, 'בִּינָה', 'Binah (Bīnā)', 'Understanding', 3)
-(4, 'חֶסֶד', 'Chesed (Ḥeseḏ)', 'Mercy', 4)
-(5, 'גְּבוּרָה', 'Geburah (Gəvūrā)', 'Strength', 5)
-(6, 'תִּפְאֶרֶת', 'Tiphereth (Tip̄ʾereṯ)', 'Beauty', 6)
-(7, 'נֶצַח', 'Netzach (Nēṣaḥ)', 'Victory', 7)
-(8, 'הוֹד', 'Hod (Hōḏ)', 'Splendour', 8)
-(9, 'יְסוֹד', 'Yesod (Yəsōḏ)', 'Foundation', 9)
-(10, 'מַלְכוּת', 'Malkuth (Malḵūṯ)', 'Kingdom', 10)
-(11, 'א', 'Aleph (ālef)', 'Ox', 11)
-(12, 'ב', 'Beth (bēt)', 'House', 12)
-(13, 'ג', 'Gimel (gīmel)', 'Camel', 13)
-(14, 'ד', 'Daleth (dāleth)', 'Door', 14)
-(15, 'ה', 'He (hē)', 'Window', 15)
-(16, 'ו', 'Vau (wāw)', 'Nail', 16)
-(17, 'ז', 'Zain (zayīn)', 'Sword', 17)
-(18, 'ח', 'Cheth (ḥēt)', 'Fence', 18)
-(19, 'ט', 'Teth (Ṭēth)', 'Serpent', 19)
-(20, 'י', 'Yod (yud)', 'Hand', 20)
-(21, 'כ', 'Kaph (kāp̄)', 'Palm', 21)
-(22, 'ל', 'Lamed (lāmeḏ)', 'Ox Goad', 22)
-(23, 'ם', 'Mem (mēm)', 'Water', 23)
-(24, 'נ', 'Nun (nūn)', 'Fish', 24)
-(25, 'נ', 'Samekh (sāmeḵ)', 'Prop', 25)
-(26, 'ע', 'Ayin (ayin)', 'Eye', 26)
-(27, 'פ', 'Peh (pē)', 'Mouth', 27)
-(28, 'צ', 'Tzaddi (ṣādī)', 'Fish-hook', 28)
-(29, 'ק', 'Qoph (qūp̄)', 'Back of head', 29)
-(30, 'ר', 'Resh (rēš)', 'Head', 30)
-(31, 'ש', 'Shin (šīn)', 'Tooth', 31)
+insert into paths (id, name, utterance, english_name, number) values (1, 'כֶּתֶר', 'Kether (Keṯer)', 'Crown', 1),
+(2, 'חָכְמָה', 'Chokmah (ḥoḵmā)', 'Wisdom', 2),
+(3, 'בִּינָה', 'Binah (Bīnā)', 'Understanding', 3),
+(4, 'חֶסֶד', 'Chesed (Ḥeseḏ)', 'Mercy', 4),
+(5, 'גְּבוּרָה', 'Geburah (Gəvūrā)', 'Strength', 5),
+(6, 'תִּפְאֶרֶת', 'Tiphereth (Tip̄ʾereṯ)', 'Beauty', 6),
+(7, 'נֶצַח', 'Netzach (Nēṣaḥ)', 'Victory', 7),
+(8, 'הוֹד', 'Hod (Hōḏ)', 'Splendour', 8),
+(9, 'יְסוֹד', 'Yesod (Yəsōḏ)', 'Foundation', 9),
+(10, 'מַלְכוּת', 'Malkuth (Malḵūṯ)', 'Kingdom', 10),
+(11, 'א', 'Aleph (ālef)', 'Ox', 11),
+(12, 'ב', 'Beth (bēt)', 'House', 12),
+(13, 'ג', 'Gimel (gīmel)', 'Camel', 13),
+(14, 'ד', 'Daleth (dāleth)', 'Door', 14),
+(15, 'ה', 'He (hē)', 'Window', 15),
+(16, 'ו', 'Vau (wāw)', 'Nail', 16),
+(17, 'ז', 'Zain (zayīn)', 'Sword', 17),
+(18, 'ח', 'Cheth (ḥēt)', 'Fence', 18),
+(19, 'ט', 'Teth (Ṭēth)', 'Serpent', 19),
+(20, 'י', 'Yod (yud)', 'Hand', 20),
+(21, 'כ', 'Kaph (kāp̄)', 'Palm', 21),
+(22, 'ל', 'Lamed (lāmeḏ)', 'Ox Goad', 22),
+(23, 'ם', 'Mem (mēm)', 'Water', 23),
+(24, 'נ', 'Nun (nūn)', 'Fish', 24),
+(25, 'ס', 'Samekh (sāmeḵ)', 'Prop', 25),
+(26, 'ע', 'Ayin (ayin)', 'Eye', 26),
+(27, 'פ', 'Peh (pē)', 'Mouth', 27),
+(28, 'צ', 'Tzaddi (ṣādī)', 'Fish-hook', 28),
+(29, 'ק', 'Qoph (qūp̄)', 'Back of head', 29),
+(30, 'ר', 'Resh (rēš)', 'Head', 30),
+(31, 'ש', 'Shin (šīn)', 'Tooth', 31),
 (32, 'ת', 'Tau (tav)', 'Cross/Mark', 32);
 
 insert into cards (id, name, image, description, description_ext, suit, val, deck_id) values 
 
 -- Rider Waite deck
 -- The Trumps
-(1, 'The Fool', 'rw_fool.png', 'The sensitive principle, the flesh, eternal life.', 'Hieroglyph, the FOOL. A man in the garb of a fool, wandering without aim, burdened with a wallet, which is doubtless full of his follies and vices; his disordered clothes discover his shame; he is being bitten by a tiger and does not know how to escape or defend himself.', 'TRUMP', 0, 1)
+(1, 'The Fool', 'rw_fool.png', 'The sensitive principle, the flesh, eternal life.', 'Hieroglyph, the FOOL. A man in the garb of a fool, wandering without aim, burdened with a wallet, which is doubtless full of his follies and vices; his disordered clothes discover his shame; he is being bitten by a tiger and does not know how to escape or defend himself.', 'TRUMP', 0, 1),
 (2, 'The Magician', 'rw_magician.png', 'Skill, willpower, and initiative.', 'Hieroglyph, the MAGICIAN. A man with tools and symbols of his craft, channeling power through his hands.', 'TRUMP', 1, 1),
 (3, 'The High Priestess', 'rw_high_priestess.png', 'Mystery, wisdom, and intuition.', 'A seated woman, veiled, holding a book of secret knowledge.', 'TRUMP', 2, 1),
 (4, 'The Empress', 'rw_empress.png', 'Fertility, creativity, and abundance.', 'A crowned woman with a scepter, symbolizing nature and creation.', 'TRUMP', 3, 1),
@@ -157,7 +157,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (97, 'La Lune', 'tdm_la_lune.png', 'Illusion, intuition, and the unconscious.', 'A moon shines over two towers, with a dog and a wolf howling below. A crayfish emerges from water, symbolizing the pull of the subconscious.', 'TRUMP', 18, 0),
 (98, 'Le Soleil', 'tdm_le_soleil.png', 'Joy, vitality, and clarity.', 'Two children play beneath a radiant sun, symbolizing warmth and success.', 'TRUMP', 19, 0),
 (99, 'Le Jugement', 'tdm_le_jugement.png', 'Awakening, rebirth, and reckoning.', 'An angel blows a trumpet as figures rise from their graves, symbolizing renewal and spiritual awakening.', 'TRUMP', 20, 0),
-(100, 'Le Monde', 'tdm_le_monde.png', 'Completion, accomplishment, and unity.', 'A figure surrounded by a wreath, flanked by the symbols of the four evangelists, representing harmony and wholeness.', 'TRUMP', 21, 0)
+(100, 'Le Monde', 'tdm_le_monde.png', 'Completion, accomplishment, and unity.', 'A figure surrounded by a wreath, flanked by the symbols of the four evangelists, representing harmony and wholeness.', 'TRUMP', 21, 0),
 
 -- Minor Arcana: Wands
 (101, 'As de Bâtons', 'tdm_as_batons.png', 'New beginnings, inspiration, and potential.', 'A single, upright wand adorned with leaves, symbolizing vitality and growth.', 'WANDS', 1, 0),
@@ -189,7 +189,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (125, 'Valet de Coupes', 'tdm_valet_coupes.png', 'Creativity, intuition, and curiosity.', 'A young figure holding a cup, symbolizing emotional beginnings.', 'CUPS', 11, 0),
 (126, 'Chevalier de Coupes', 'tdm_chevalier_coupes.png', 'Romance, charm, and imagination.', 'A knight on horseback holding a cup, symbolizing emotional action.', 'CUPS', 12, 0),
 (127, 'Reine de Coupes', 'tdm_reine_coupes.png', 'Compassion, nurturing, and sensitivity.', 'A queen seated with a cup, representing emotional depth.', 'CUPS', 13, 0),
-(128, 'Roi de Coupes', 'tdm_roi_coupes.png', 'Emotional balance, diplomacy, and control.', 'A king seated with a cup, symbolizing mastery over emotions.', 'CUPS', 14, 0)
+(128, 'Roi de Coupes', 'tdm_roi_coupes.png', 'Emotional balance, diplomacy, and control.', 'A king seated with a cup, symbolizing mastery over emotions.', 'CUPS', 14, 0),
 
 -- Minor Arcana: Swords
 (129, 'As d’Épées', 'tdm_as_epées.png', 'New beginnings, clarity, and intellect.', 'A single upright sword adorned with a crown and laurel, symbolizing truth and victory.', 'SWORDS', 1, 0),
@@ -221,7 +221,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (153, 'Valet de Deniers', 'tdm_valet_deniers.png', 'Curiosity, ambition, and new opportunities.', 'A young figure holding a coin, symbolizing the pursuit of prosperity.', 'COINS', 11, 0),
 (154, 'Chevalier de Deniers', 'tdm_chevalier_deniers.png', 'Hard work, determination, and practicality.', 'A knight on horseback holding a coin, representing steady progress.', 'COINS', 12, 0),
 (155, 'Reine de Deniers', 'tdm_reine_deniers.png', 'Nurturing, resourcefulness, and practicality.', 'A queen seated with a coin, representing material and emotional support.', 'COINS', 13, 0),
-(156, 'Roi de Deniers', 'tdm_roi_deniers.png', 'Stability, leadership, and abundance.', 'A king seated with a coin, symbolizing mastery of wealth and prosperity.', 'COINS', 14, 0);
+(156, 'Roi de Deniers', 'tdm_roi_deniers.png', 'Stability, leadership, and abundance.', 'A king seated with a coin, symbolizing mastery of wealth and prosperity.', 'COINS', 14, 0),
 
 -- Major Arcana (Book of Thoth)
 (157, 'The Fool', 'bot_fool.png', 'Infinite potential, innocence, and the chaos of creation.', 'The Fool in the Book of Thoth is depicted as a jester leaping forward, surrounded by symbols of creation, transformation, and the interplay of opposites.', 'TRUMP', 0, 2),
@@ -245,7 +245,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (175, 'The Moon', 'bot_moon.png', 'Illusion, dreams, and the subconscious.', 'The Moon depicts a scarab, towers, and a path leading into the unknown, emphasizing the mystery of the inner world.', 'TRUMP', 18, 2),
 (176, 'The Sun', 'bot_sun.png', 'Vitality, joy, and clarity.', 'The Sun features twin children playing under the rays of the sun, representing enlightenment and harmony.', 'TRUMP', 19, 2),
 (177, 'The Aeon', 'bot_aeon.png', 'Judgment, evolution, and awakening.', 'Replacing Judgment, the Aeon shows a child Horus, heralding the birth of a new age of consciousness.', 'TRUMP', 20, 2),
-(178, 'The Universe', 'bot_universe.png', 'Completion, fulfillment, and cosmic unity.', 'The Universe features a dancing figure surrounded by the Zodiac, representing the culmination of a journey.', 'TRUMP', 21, 2);
+(178, 'The Universe', 'bot_universe.png', 'Completion, fulfillment, and cosmic unity.', 'The Universe features a dancing figure surrounded by the Zodiac, representing the culmination of a journey.', 'TRUMP', 21, 2),
 
 -- Minor Arcana: Wands (Book of Thoth)
 (179, 'Ace of Wands', 'bot_ace_wands.png', 'Creative force, potential, and willpower.', 'A flaming wand radiates light and energy, representing the purest form of fire and inspiration.', 'WANDS', 1, 2),
@@ -277,7 +277,7 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 (203, 'Princess of Cups', 'bot_princess_cups.png', 'Imagination, intuition, and sensitivity.', 'The Princess holds a cup from which a turtle emerges, symbolizing creativity and gentle curiosity.', 'CUPS', 11, 2),
 (204, 'Prince of Cups', 'bot_prince_cups.png', 'Charm, depth, and introspection.', 'The Prince rides a chariot drawn by an eagle, symbolizing the pursuit of emotional understanding.', 'CUPS', 12, 2),
 (205, 'Queen of Cups', 'bot_queen_cups.png', 'Empathy, nurturing, and emotional wisdom.', 'The Queen holds a cup, seated amidst calm waters, embodying deep emotional understanding.', 'CUPS', 13, 2),
-(206, 'Knight of Cups', 'bot_knight_cups.png', 'Romance, idealism, and emotional quest.', 'The Knight rides a horse, carrying a cup, representing the pursuit of love and inspiration.', 'CUPS', 14, 2);
+(206, 'Knight of Cups', 'bot_knight_cups.png', 'Romance, idealism, and emotional quest.', 'The Knight rides a horse, carrying a cup, representing the pursuit of love and inspiration.', 'CUPS', 14, 2),
 
 -- Minor Arcana: Swords (Book of Thoth)
 (207, 'Ace of Swords', 'bot_ace_swords.png', 'Clarity, intellect, and mental potential.', 'A single upright sword pierces the sky, surrounded by a crown, symbolizing the power of the mind.', 'SWORDS', 1, 2),
@@ -313,101 +313,101 @@ insert into cards (id, name, image, description, description_ext, suit, val, dec
 
 insert into attributions (id, name, symbol, major_attribution_id, minor_attribution_id) values
 -- Insert planets
-(0, "Mars", "att_mars.png", null, null),
-(1, "Sun", "att_sun.png", null, null),
-(2, "Moon", "att_moon.png", null, null),
-(3, "Mercury", "att_mercury.png", null, null),
-(4, "Venus", "att_venus.png", null, null),
-(5, "Jupiter", "att_jupiter.png", null, null),
-(6, "Saturn", "att_saturn.png", null, null),
-(7, "Uranus", "att_uranus.png", null, null),
-(8, "Neptune", "att_neptune.png", null, null),
-(9, "Pluto", "att_pluto.png", null, null),
+(0, 'Mars', 'att_mars.png', null, null),
+(1, 'Sun', 'att_sun.png', null, null),
+(2, 'Moon', 'att_moon.png', null, null),
+(3, 'Mercury', 'att_mercury.png', null, null),
+(4, 'Venus', 'att_venus.png', null, null),
+(5, 'Jupiter', 'att_jupiter.png', null, null),
+(6, 'Saturn', 'att_saturn.png', null, null),
+(7, 'Uranus', 'att_uranus.png', null, null),
+(8, 'Neptune', 'att_neptune.png', null, null),
+(9, 'Pluto', 'att_pluto.png', null, null),
 
 -- Insert houses (related signs)
-(10, "Aries", "att_aries.png", null, null),
-(11, "Taurus", "att_taurus.png", null, null),
-(12, "Gemini", "att_gemini.png", null, null),
-(13, "Cancer", "att_cancer.png", null, null),
-(14, "Leo", "att_leo.png", null, null),
-(15, "Virgo", "att_virgo.png", null, null),
-(16, "Libra", "att_libra.png", null, null),
-(17, "Scorpio", "att_scorpio.png", null, null),
-(18, "Sagittarius", "att_sagittarius.png", null, null),
-(19, "Capricorn", "att_capricorn.png", null, null),
-(20, "Aquarius", "att_aquarius.png", null, null),
-(21, "Pisces", "att_pisces.png", null, null)
+(10, 'Aries', 'att_aries.png', null, null),
+(11, 'Taurus', 'att_taurus.png', null, null),
+(12, 'Gemini', 'att_gemini.png', null, null),
+(13, 'Cancer', 'att_cancer.png', null, null),
+(14, 'Leo', 'att_leo.png', null, null),
+(15, 'Virgo', 'att_virgo.png', null, null),
+(16, 'Libra', 'att_libra.png', null, null),
+(17, 'Scorpio', 'att_scorpio.png', null, null),
+(18, 'Sagittarius', 'att_sagittarius.png', null, null),
+(19, 'Capricorn', 'att_capricorn.png', null, null),
+(20, 'Aquarius', 'att_aquarius.png', null, null),
+(21, 'Pisces', 'att_pisces.png', null, null),
 
 -- Wands
-(22, "Mars in Aries", "att_mars_aries.png", 10, 0), -- 2 of Wands (Dominion)
-(23, "Sun in Aries", "att_sun_aries.png", 10, 1), -- 3 of Wands (Virtue)
-(24, "Venus in Aries", "att_venus_aries.png", 10, 4), -- 4 of Wands (Completion)
-(25, "Saturn in Leo", "att_saturn_leo.png", 14, 6), -- 5 of Wands (Strife)
-(26, "Jupiter in Leo", "att_jupiter_leo.png", 14, 5), -- 6 of Wands (Victory)
-(27, "Mars in Leo", "att_mars_leo.png", 14, 0), -- 7 of Wands (Valour)
-(28, "Mercury in Sagittarius", "att_mercury_sagittarius.png", 18, 3), -- 8 of Wands (Swiftness)
-(29, "Moon in Sagittarius", "att_moon_sagittarius.png", 18, 2), -- 9 of Wands (Strength)
-(30, "Saturn in Sagittarius", "att_saturn_sagittarius.png", 18, 6), -- 10 of Wands (Oppression)
+(22, 'Mars in Aries', 'att_mars_aries.png', 10, 0), -- 2 of Wands (Dominion)
+(23, 'Sun in Aries', 'att_sun_aries.png', 10, 1), -- 3 of Wands (Virtue)
+(24, 'Venus in Aries', 'att_venus_aries.png', 10, 4), -- 4 of Wands (Completion)
+(25, 'Saturn in Leo', 'att_saturn_leo.png', 14, 6), -- 5 of Wands (Strife)
+(26, 'Jupiter in Leo', 'att_jupiter_leo.png', 14, 5), -- 6 of Wands (Victory)
+(27, 'Mars in Leo', 'att_mars_leo.png', 14, 0), -- 7 of Wands (Valour)
+(28, 'Mercury in Sagittarius', 'att_mercury_sagittarius.png', 18, 3), -- 8 of Wands (Swiftness)
+(29, 'Moon in Sagittarius', 'att_moon_sagittarius.png', 18, 2), -- 9 of Wands (Strength)
+(30, 'Saturn in Sagittarius', 'att_saturn_sagittarius.png', 18, 6), -- 10 of Wands (Oppression)
 
 -- Cups
-(31, "Venus in Cancer", "att_venus_cancer.png", 13, 4), -- 2 of Cups (Love)
-(32, "Mercury in Cancer", "att_mercury_cancer.png", 13, 3), -- 3 of Cups (Abundance)
-(33, "Moon in Cancer", "att_moon_cancer.png", 13, 2), -- 4 of Cups (Luxury)
-(34, "Mars in Scorpio", "att_mars_scorpio.png", 17, 0), -- 5 of Cups (Disappointment)
-(35, "Sun in Scorpio", "att_sun_scorpio.png", 17, 1), -- 6 of Cups (Pleasure)
-(36, "Venus in Scorpio", "att_venus_scorpio.png", 17, 4), -- 7 of Cups (Debauch)
-(37, "Saturn in Pisces", "att_saturn_pisces.png", 21, 6), -- 8 of Cups (Indolence)
-(38, "Jupiter in Pisces", "att_jupiter_pisces.png", 21, 5), -- 9 of Cups (Happiness)
-(39, "Mars in Pisces", "att_mars_pisces.png", 21, 0), -- 10 of Cups (Satiety)
+(31, 'Venus in Cancer', 'att_venus_cancer.png', 13, 4), -- 2 of Cups (Love)
+(32, 'Mercury in Cancer', 'att_mercury_cancer.png', 13, 3), -- 3 of Cups (Abundance)
+(33, 'Moon in Cancer', 'att_moon_cancer.png', 13, 2), -- 4 of Cups (Luxury)
+(34, 'Mars in Scorpio', 'att_mars_scorpio.png', 17, 0), -- 5 of Cups (Disappointment)
+(35, 'Sun in Scorpio', 'att_sun_scorpio.png', 17, 1), -- 6 of Cups (Pleasure)
+(36, 'Venus in Scorpio', 'att_venus_scorpio.png', 17, 4), -- 7 of Cups (Debauch)
+(37, 'Saturn in Pisces', 'att_saturn_pisces.png', 21, 6), -- 8 of Cups (Indolence)
+(38, 'Jupiter in Pisces', 'att_jupiter_pisces.png', 21, 5), -- 9 of Cups (Happiness)
+(39, 'Mars in Pisces', 'att_mars_pisces.png', 21, 0), -- 10 of Cups (Satiety)
 
 -- Swords
-(40, "Moon in Libra", "att_moon_libra.png", 16, 2), -- 2 of Swords (Peace)
-(41, "Saturn in Libra", "att_saturn_libra.png", 16, 6), -- 3 of Swords (Sorrow)
-(42, "Jupiter in Libra", "att_jupiter_libra.png", 16, 5), -- 4 of Swords (Truce)
-(43, "Venus in Aquarius", "att_venus_aquarius.png", 20, 4), -- 5 of Swords (Defeat)
-(44, "Mercury in Aquarius", "att_mercury_aquarius.png", 20, 3), -- 6 of Swords (Science)
-(45, "Moon in Aquarius", "att_moon_aquarius.png", 20, 2), -- 7 of Swords (Futility)
-(46, "Jupiter in Gemini", "att_jupiter_gemini.png", 12, 5), -- 8 of Swords (Interference)
-(47, "Mars in Gemini", "att_mars_gemini.png", 12, 0), -- 9 of Swords (Cruelty)
-(48, "Sun in Gemini", "att_sun_gemini.png", 12, 1), -- 10 of Swords (Ruin)
+(40, 'Moon in Libra', 'att_moon_libra.png', 16, 2), -- 2 of Swords (Peace)
+(41, 'Saturn in Libra', 'att_saturn_libra.png', 16, 6), -- 3 of Swords (Sorrow)
+(42, 'Jupiter in Libra', 'att_jupiter_libra.png', 16, 5), -- 4 of Swords (Truce)
+(43, 'Venus in Aquarius', 'att_venus_aquarius.png', 20, 4), -- 5 of Swords (Defeat)
+(44, 'Mercury in Aquarius', 'att_mercury_aquarius.png', 20, 3), -- 6 of Swords (Science)
+(45, 'Moon in Aquarius', 'att_moon_aquarius.png', 20, 2), -- 7 of Swords (Futility)
+(46, 'Jupiter in Gemini', 'att_jupiter_gemini.png', 12, 5), -- 8 of Swords (Interference)
+(47, 'Mars in Gemini', 'att_mars_gemini.png', 12, 0), -- 9 of Swords (Cruelty)
+(48, 'Sun in Gemini', 'att_sun_gemini.png', 12, 1), -- 10 of Swords (Ruin)
 
 -- Disks
-(49, "Jupiter in Capricorn", "att_jupiter_capricorn.png", 19, 5), -- 2 of Disks (Change)
-(50, "Mars in Capricorn", "att_mars_capricorn.png", 19, 0), -- 3 of Disks (Work)
-(51, "Sun in Capricorn", "att_sun_capricorn.png", 19, 1), -- 4 of Disks (Power)
-(52, "Mercury in Taurus", "att_mercury_taurus.png", 11, 3), -- 5 of Disks (Worry)
-(53, "Moon in Taurus", "att_moon_taurus.png", 11, 2), -- 6 of Disks (Success)
-(54, "Saturn in Taurus", "att_saturn_taurus.png", 11, 6), -- 7 of Disks (Failure)
-(55, "Sun in Virgo", "att_sun_virgo.png", 15, 1), -- 8 of Disks (Prudence)
-(56, "Venus in Virgo", "att_venus_virgo.png", 15, 4), -- 9 of Disks (Gain)
-(57, "Mercury in Virgo", "att_mercury_virgo.png", 15, 3), -- 10 of Disks (Wealth)
+(49, 'Jupiter in Capricorn', 'att_jupiter_capricorn.png', 19, 5), -- 2 of Disks (Change)
+(50, 'Mars in Capricorn', 'att_mars_capricorn.png', 19, 0), -- 3 of Disks (Work)
+(51, 'Sun in Capricorn', 'att_sun_capricorn.png', 19, 1), -- 4 of Disks (Power)
+(52, 'Mercury in Taurus', 'att_mercury_taurus.png', 11, 3), -- 5 of Disks (Worry)
+(53, 'Moon in Taurus', 'att_moon_taurus.png', 11, 2), -- 6 of Disks (Success)
+(54, 'Saturn in Taurus', 'att_saturn_taurus.png', 11, 6), -- 7 of Disks (Failure)
+(55, 'Sun in Virgo', 'att_sun_virgo.png', 15, 1), -- 8 of Disks (Prudence)
+(56, 'Venus in Virgo', 'att_venus_virgo.png', 15, 4), -- 9 of Disks (Gain)
+(57, 'Mercury in Virgo', 'att_mercury_virgo.png', 15, 3), -- 10 of Disks (Wealth)
 
 -- Classical Elements
-(58, "Fire", "att_fire.png", null, null),
-(59, "Water", "att_water.png", null, null),
-(60, "Earth", "att_earth.png", null, null),
-(61, "Air", "att_air.png", null, null),
+(58, 'Fire', 'att_fire.png', null, null),
+(59, 'Water', 'att_water.png', null, null),
+(60, 'Earth', 'att_earth.png', null, null),
+(61, 'Air', 'att_air.png', null, null),
 
 -- Elemental Combinations for Court Cards
-(62, "Fire of Fire", "att_fire_fire.png", 58, 58),
-(63, "Fire of Water", "att_fire_water.png", 59, 58),
-(64, "Fire of Earth", "att_fire_earth.png", 60, 58),
-(65, "Fire of Air", "att_fire_air.png", 61, 58),
+(62, 'Fire of Fire', 'att_fire_fire.png', 58, 58),
+(63, 'Fire of Water', 'att_fire_water.png', 59, 58),
+(64, 'Fire of Earth', 'att_fire_earth.png', 60, 58),
+(65, 'Fire of Air', 'att_fire_air.png', 61, 58),
 
-(66, "Water of Fire", "att_water_fire.png", 58, 59),
-(67, "Water of Water", "att_water_water.png", 59, 59),
-(68, "Water of Earth", "att_water_earth.png", 60, 59),
-(69, "Water of Air", "att_water_air.png", 61, 59),
+(66, 'Water of Fire', 'att_water_fire.png', 58, 59),
+(67, 'Water of Water', 'att_water_water.png', 59, 59),
+(68, 'Water of Earth', 'att_water_earth.png', 60, 59),
+(69, 'Water of Air', 'att_water_air.png', 61, 59),
 
-(70, "Earth of Fire", "att_earth_fire.png", 58, 60),
-(71, "Earth of Water", "att_earth_water.png", 59, 60),
-(72, "Earth of Earth", "att_earth_earth.png", 60, 60),
-(73, "Earth of Air", "att_earth_air.png", 61, 60),
+(70, 'Earth of Fire', 'att_earth_fire.png', 58, 60),
+(71, 'Earth of Water', 'att_earth_water.png', 59, 60),
+(72, 'Earth of Earth', 'att_earth_earth.png', 60, 60),
+(73, 'Earth of Air', 'att_earth_air.png', 61, 60),
 
-(74, "Air of Fire", "att_air_fire.png", 58, 61),
-(75, "Air of Water", "att_air_water.png", 59, 61),
-(76, "Air of Earth", "att_air_earth.png", 60, 61),
-(77, "Air of Air", "att_air_air.png", 61, 61);
+(74, 'Air of Fire', 'att_air_fire.png', 58, 61),
+(75, 'Air of Water', 'att_air_water.png', 59, 61),
+(76, 'Air of Earth', 'att_air_earth.png', 60, 61),
+(77, 'Air of Air', 'att_air_air.png', 61, 61);
 
 INSERT INTO spreads (id, name, source, description, description_ext, count, diagram) VALUES
 (1, 'Celtic Cross', 'Traditional', 'A 10-card spread for in-depth insights.', 
