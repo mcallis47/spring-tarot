@@ -13,8 +13,9 @@ public class ReadingController {
 	public ReadingController(ReadingService readingService) {
 		this.service = readingService;
 	}
-	@GetMapping("/reading/{arrangementId}/{spreadId}")
-	Reading getReading(@PathVariable Long arrangementId, @PathVariable Long spreadId) {
-		return service.getReading(arrangementId, spreadId);
-	}
+//	@GetMapping("/reading/{arrangementId}/{spreadId}")
+//	Reading getReading(@PathVariable Long arrangementId, @PathVariable Long spreadId) {
+//		return service.getReading(arrangementId, spreadId);
+//	}
+	//TODO: Repair
 }

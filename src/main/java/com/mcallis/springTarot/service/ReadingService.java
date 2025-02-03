@@ -20,13 +20,14 @@ public class ReadingService {
 		this.arrangementRepository = arrangementRepository;
 		this.spreadRepository = spreadRepository;
 	}
-	@Transactional
-	public Reading getReading(Long arrangementId, Long spreadId) {
-		Optional<Arrangement> arrangement = arrangementRepository.findById(arrangementId);
-		Optional<Spread> spread = spreadRepository.findById(spreadId);
-		Reading reading = new Reading(arrangement.get(), spread.get());
-		return reading;
-	}
+	//@Transactional
+//	public Reading getReading(Long arrangementId, Long spreadId) {
+//		Optional<Arrangement> arrangement = arrangementRepository.findById(arrangementId);
+//		Optional<Spread> spread = spreadRepository.findById(spreadId);
+//		Reading reading = new Reading(arrangement.get(), spread.get());
+//		return reading;
+//	}
+	//TODO: Repair
 	
 	
 	
